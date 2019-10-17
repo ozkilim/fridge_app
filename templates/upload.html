@@ -2,7 +2,7 @@
 
 {% block content %}
     {% load static %}
-<br>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-2">
@@ -18,8 +18,21 @@
                 <form method=post enctype=multipart/form-data>
                     {% csrf_token %}
                     <p><input type=file name=file>
-                        <input type=submit value=Upload>
+
+
+
+
+                    <input type=submit value=Upload>
                 </form>
+            <br>
+              <div>
+                    <div class="upload">
+                        <span1 class="glyphicon glyphicon-arrow-up arrow" aria-hidden="true"></span1>
+                        <span1 class="glyphicon glyphicon-ok ok" aria-hidden="true"></span1>
+                    </div>
+                    <div class="upload_button" data-text-swap="reset">upload</div>
+                    </div>
+            <br>
 
                 <h1>Result:</h1>
                 {% if img_src %}
@@ -33,7 +46,7 @@
                     The extracted text will be displayed here
                 {% endif %}
                 <br>
-            <br>
+                <br>
                 <div class="button">
                     <div>
                         <a class="center"><a href="{% url 'foodshow:index' %}" class="pushme"> <span
