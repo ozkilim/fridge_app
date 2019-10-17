@@ -2,39 +2,57 @@
 
 {% block content %}
 
-<br>
+    <br>
 
 
-{% load crispy_forms_tags %}
-<div class = "login">
-<div class="container">
-  <div class="row">
-    <div class="col-4"></div>
-    <div class="col-4">
-        <form method="POST" class="form">
-      {% csrf_token %}
-      {{ form | crispy }}
-            <br>
-      <button type="submit" class="login_button">LOGIN</button>
-  </form>
-<br>
-        <h2>Not a user?</h2>
-        <br>
-        <div class="button">
-                        <div>
-                            <a class="center"><a href="{% url 'foodshow:signup' %}" class="pushme"> <span
-                                    class="inner"> sign up here</span></a>
-                            </a>
-                        </div>
+    {% load crispy_forms_tags %}
+    <div class="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
 
+
+                <form role="form" class="form-horizontal" method="post"
+                      action="{% url 'foodshow:login' %}">{% csrf_token %}
+                    <div class="form-group">
+
+
+                        <label for="id_username" class="usernametag">USERNAME</label>
+                        <input id="id_username" name="username"
+                               type="text" class="username-control-login">
+
+                        <label for="id_password" class="passwordtag">PASSWORD</label>
+                        <input id="id_password" name="password"
+                               type="text" class="password-control-login">
+                        <br>
+
+
+
+                        <input type="submit" class="signup_button" value="login"/>
+                        <input type="hidden" name="next" value="{{ next }}"/>
                     </div>
-</div>
-</div>
-
-<br>
+                </form>
 
 
-</div>
+                <br>
+                <h2>Not a user?</h2>
+                <br>
+                <div class="button">
+                    <div>
+                        <a class="center"><a href="{% url 'foodshow:signup' %}" class="pushme"> <span
+                                class="inner"> sign up here</span></a>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+
+    </div>
 
 {% endblock %}
 

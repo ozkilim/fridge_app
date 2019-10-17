@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/black-burger/PV_Black-Burger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/black-burger/black-burger.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/webfont.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/eaten.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eaten.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,17 +39,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/font" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/static/font" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/foodshow" />
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/font" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/foodscan" />
       <recent name="$PROJECT_DIR$/foodshow" />
@@ -154,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570801512178</updated>
-      <workItem from="1570801547480" duration="103321000" />
+      <workItem from="1570801547480" duration="109973000" />
     </task>
     <servers />
   </component>

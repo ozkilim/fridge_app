@@ -164,12 +164,15 @@ def upload_page(request):
 
 
 def eaten(request):
-    if request.method == 'POST':
-        non_eaten_food_id = request.POST.get('submit')
+    if request.method == 'POST' :
+        if 'submit' in request.POST:
+            non_eaten_food_id = request.POST.get('submit')
+            get_eaten_food_from_fridge = Fridge.objects.get(id=non_eaten_food_id)
+            get_eaten_food_from_fridge.used = False
+            get_eaten_food_from_fridge.save()
 
-        get_eaten_food_from_fridge = Fridge.objects.get(id=non_eaten_food_id)
-        get_eaten_food_from_fridge.used = False
-        get_eaten_food_from_fridge.save()
+        elif 'delete_foods' in request.POST:
+            Fridge.objects.filter(used=True).delete()
 
     fridge_foods = Fridge.objects.all()
     eaten_foods = []
@@ -280,3 +283,4 @@ def fridge_manager(request):
         form = CustomFridgeFoodsForm()
 
     return render(request, "fridge_manager.html", {"form": form}, {"passinlist":passinlist})
+

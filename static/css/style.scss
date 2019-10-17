@@ -391,7 +391,9 @@ span1{
   font-weight: 800;
 }
 
-.singup_button{
+.signup_button{
+  position: relative;
+  top: 30px;
   border: 10px;
   border-radius: 10px;
   background-color:$main;
@@ -400,8 +402,54 @@ span1{
   font-weight: 500;
 
 }
-.singup_button:hover {
+.signup_button:hover {
   background-color:$back;
   color: $main;
   font-weight: 800;
 }
+
+.delete_foods{
+  visibility: hidden;
+}
+
+
+@font-face{
+  font-family: 'MyWebFont';
+  src: url('../font/webfont.ttf')  format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'black-burger';
+  src: url('../font/black-burger/black-burger.ttf')  format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.password-control-login{
+    font-family: MyWebFOnt;
+  width: 425px;
+}
+
+.username-control-login{
+  width: 425px;
+font-family: black-burger;
+}
+
+.usernametag{
+    font-family: black-burger;
+    position: relative;
+
+  top: 0px;
+  left: 100px;
+}
+
+.passwordtag{
+    font-family: black-burger;
+    position: relative;
+
+  top: 0px;
+  left: 100px;
+}
+
