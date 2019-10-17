@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br>
+    <div class ="row">
+    <div class="col-3">
+    </div>
+    <div class="col-6">
+<h3>Sign up to give!</h3>
+<form method="post">
+  {% csrf_token %}
+  {{ form | crispy }}
+  <button type="submit">Sign up</button>
+</form>
+
+    <p><a href="{% url 'foodshow:login' %}">Already a user? --> login here</a></p>
+    </div>
+    </div>
+
+{% endblock %}

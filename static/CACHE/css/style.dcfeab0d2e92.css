@@ -1,0 +1,61 @@
+/* line 4, static/css/style.scss */
+.pushme {
+  position: relative;
+  font-weight: 700;
+  background-color: #384D9D;
+  border-radius: 0.6em;
+  display: inline-block;
+  margin: 0em; }
+  /* line 11, static/css/style.scss */
+  .pushme .inner {
+    display: inline-block;
+    background-color: #F6F3EB;
+    border-radius: 0.6em;
+    border: 0.3em solid #384D9D;
+    padding: 0em;
+    cursor: pointer;
+    text-transform: uppercase;
+    user-select: none;
+    transform: translate3d(0.6em, -0.6em, 0);
+    transition: transform 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 220ms; }
+  /* line 25, static/css/style.scss */
+  .pushme:active .inner, .pushme.click .inner {
+    transform: translate3d(0, 0, 0);
+    transition: transform 120ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 36, static/css/style.scss */
+body {
+  background: #F6F3EB !important;
+  font-family: "Open Sans", sans-serif !important;
+  color: #384D9D !important;
+  font-size: 5vh; }
+
+/* line 43, static/css/style.scss */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  text-align: center;
+  transform: translate3d(-50%, -50%, 0); }
+
+/* line 52, static/css/style.scss */
+.sig {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.4); }
+
+/* line 63, static/css/style.scss */
+.button {
+  position: absolute;
+  left: 35%; }
+
+/* line 68, static/css/style.scss */
+.uploadpagebutton {
+  float: left; }

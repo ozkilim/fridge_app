@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load static %}
+<br>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8">
+                {% if msg %}
+                    <h1>{{ msg }}</h1>
+                {% endif %}
+
+                <h1>Upload new File</h1>
+
+                <form method=post enctype=multipart/form-data>
+                    {% csrf_token %}
+                    <p><input type=file name=file>
+                        <input type=submit value=Upload>
+                </form>
+
+                <h1>Result:</h1>
+                {% if img_src %}
+                    <img src="{{ img_src }}">
+                {% endif %}
+
+                {% if extracted_text %}
+                    <p> The extracted text from the image above is: <b> {{ extracted_text }} </b></p>
+
+                {% else %}
+                    The extracted text will be displayed here
+                {% endif %}
+                <br>
+            <br>
+                <div class="button">
+                    <div>
+                        <a class="center"><a href="{% url 'foodshow:index' %}" class="pushme"> <span
+                                class="inner">back to the fridge</span></a>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

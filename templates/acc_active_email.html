@@ -1,0 +1,6 @@
+{% autoescape off %}
+Hi {{ user.username }},
+Please click on the link to confirm your registration to keep track of the foods in your fridge!
+
+http://{{ domain }}{% url 'foodshow:activate' uidb64=uid token=token %}
+{% endautoescape %}

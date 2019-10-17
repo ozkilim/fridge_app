@@ -1,0 +1,214 @@
+/* line 4, static/css/style.scss */
+.pushme {
+  position: relative;
+  font-weight: 700;
+  background-color: #384D9D;
+  border-radius: 0.6em;
+  display: inline-block;
+  margin: 0em; }
+  /* line 11, static/css/style.scss */
+  .pushme .inner {
+    display: inline-block;
+    background-color: #F6F3EB;
+    border-radius: 0.6em;
+    border: 0.3em solid #384D9D;
+    padding: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    user-select: none;
+    transform: translate3d(0.6em, -0.6em, 0);
+    transition: transform 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 220ms; }
+  /* line 25, static/css/style.scss */
+  .pushme:active .inner, .pushme.click .inner {
+    transform: translate3d(0, 0, 0);
+    transition: transform 120ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 35, static/css/style.scss */
+.uploadpushme {
+  position: relative;
+  font-weight: 700;
+  background-color: #384D9D;
+  border-radius: 0.6em;
+  display: inline-block;
+  margin: 0em; }
+  /* line 42, static/css/style.scss */
+  .uploadpushme .uploadinner {
+    display: inline-block;
+    background-color: #F6F3EB;
+    border-radius: 0.6em;
+    border: 0.3em solid #384D9D;
+    padding: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    user-select: none;
+    transform: translate3d(0.6em, -0.6em, 0);
+    transition: transform 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 220ms; }
+  /* line 56, static/css/style.scss */
+  .uploadpushme:active .uploadinner, .uploadpushme.click .uploadinner {
+    transform: translate3d(0, 0, 0);
+    transition: transform 120ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 65, static/css/style.scss */
+body {
+  background: #F6F3EB !important;
+  font-family: "Open Sans", sans-serif !important;
+  color: #384D9D !important;
+  font-size: 5vh; }
+
+/* line 72, static/css/style.scss */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  text-align: center;
+  transform: translate3d(-50%, -50%, 0); }
+
+/* line 81, static/css/style.scss */
+.sig {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.4); }
+
+/* line 92, static/css/style.scss */
+.button {
+  position: absolute;
+  left: 35%; }
+
+/* line 97, static/css/style.scss */
+.uploadpagebutton {
+  float: left; }
+
+/* line 102, static/css/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 107, static/css/style.scss */
+body {
+  height: 100vh;
+  position: relative; }
+
+/* line 111, static/css/style.scss */
+.ocrloader {
+  width: 200px;
+  height: 120px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden; }
+  /* line 119, static/css/style.scss */
+  .ocrloader span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(45, 183, 183, 0.54);
+    z-index: 1;
+    transform: translateY(135%);
+    animation: move 1s cubic-bezier(0.15, 0.44, 0.76, 0.64);
+    animation-iteration-count: infinite; }
+  /* line 131, static/css/style.scss */
+  .ocrloader > div {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 48%;
+    backface-visibility: hidden; }
+  /* line 140, static/css/style.scss */
+  .ocrloader i {
+    display: block;
+    height: 1px;
+    background: #000;
+    margin: 0 auto 2px;
+    margin: 0 auto 2.2px;
+    backface-visibility: hidden; }
+    /* line 147, static/css/style.scss */
+    .ocrloader i:nth-child(2) {
+      width: 75%; }
+    /* line 148, static/css/style.scss */
+    .ocrloader i:nth-child(3) {
+      width: 81%; }
+    /* line 149, static/css/style.scss */
+    .ocrloader i:nth-child(4) {
+      width: 87%; }
+    /* line 150, static/css/style.scss */
+    .ocrloader i:nth-child(6) {
+      width: 71%; }
+    /* line 151, static/css/style.scss */
+    .ocrloader i:nth-child(7) {
+      width: 81%; }
+    /* line 152, static/css/style.scss */
+    .ocrloader i:nth-child(8) {
+      width: 65%; }
+    /* line 153, static/css/style.scss */
+    .ocrloader i:nth-child(9) {
+      width: 83%; }
+    /* line 154, static/css/style.scss */
+    .ocrloader i:nth-child(10) {
+      width: 75%; }
+    /* line 155, static/css/style.scss */
+    .ocrloader i:nth-child(12) {
+      width: 86%; }
+    /* line 156, static/css/style.scss */
+    .ocrloader i:nth-child(14) {
+      width: 65%; }
+    /* line 157, static/css/style.scss */
+    .ocrloader i:nth-child(16) {
+      width: 75%; }
+    /* line 158, static/css/style.scss */
+    .ocrloader i:nth-child(18) {
+      width: 83%; }
+  /* line 160, static/css/style.scss */
+  .ocrloader:before, .ocrloader:after, .ocrloader em:after, .ocrloader em:before {
+    border-color: #000;
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 16px;
+    border-style: solid;
+    border-width: 0px; }
+  /* line 169, static/css/style.scss */
+  .ocrloader:before {
+    left: 0;
+    top: 0;
+    border-left-width: 1px;
+    border-top-width: 1px; }
+  /* line 175, static/css/style.scss */
+  .ocrloader:after {
+    right: 0;
+    top: 0;
+    border-right-width: 1px;
+    border-top-width: 1px; }
+  /* line 181, static/css/style.scss */
+  .ocrloader em:before {
+    left: 0;
+    bottom: 0;
+    border-left-width: 1px;
+    border-bottom-width: 1px; }
+  /* line 187, static/css/style.scss */
+  .ocrloader em:after {
+    right: 0;
+    bottom: 0;
+    border-right-width: 1px;
+    border-bottom-width: 1px; }
+
+@keyframes move {
+  0%, 100% {
+    transform: translateY(490%); }
+  50% {
+    transform: translateY(0%); }
+  75% {
+    transform: translateY(272%); } }

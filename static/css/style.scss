@@ -1,0 +1,282 @@
+$main: #384D9D;
+$back: #F6F3EB;
+
+.pushme{
+  position: relative;
+  font-weight: 700;
+  background-color: $main;
+  border-radius: 0.6em;
+  display: inline-block;
+  margin: 0em;
+  .inner{
+    display: inline-block;
+    background-color: $back;
+    border-radius: 0.6em;
+    border: 0.3em solid $main;
+    padding: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    user-select: none;
+    transform: translate3d(0.6em, -0.6em, 0);
+    transition: transform 240ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition-delay: 220ms;
+  }
+  &:active, &.click{
+    .inner{
+      transform: translate3d(0, 0, 0);
+      transition: transform 120ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    }
+  }
+}
+
+$sans: 'Open Sans', sans-serif;
+
+
+.uploadpushme{
+  position: relative;
+  font-weight: 700;
+  background-color: $main;
+  text-align: center;
+  border-radius: 0.6em;
+  display: inline-block;
+  margin: 0em;
+  .uploadinner{
+    display: inline-block;
+    background-color: $back;
+    border-radius: 0.6em;
+    border: 0.3em solid $main;
+    padding: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    user-select: none;
+    transform: translate3d(0.6em, -0.6em, 0);
+    transition: transform 240ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition-delay: 220ms;
+  }
+  &:active, &.click{
+    .uploadinner{
+      transform: translate3d(0, 0, 0);
+      transition: transform 120ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    }
+  }
+}
+
+
+
+body{
+  background: $back !important;
+  font-family: $sans !important;
+  color: $main !important;
+  font-size: 5vh;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  text-align: center;
+  transform: translate3d(-50%,-50%,0);
+}
+
+.sig{
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: rgba(0,0,0,0.4);
+}
+
+.button{
+  position: absolute;
+  left: 7%;
+}
+
+.uploadpagebutton{
+  float: left ;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  position: relative;
+}
+.ocrloader {
+  width: 200px;
+  height: 120px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  backface-visibility: hidden;
+  span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(45, 183, 183, 0.54);
+    z-index: 1;
+    transform: translateY(135%);
+    animation: move 1.0s cubic-bezier(0.15, 0.44, 0.76, 0.64);
+    animation-iteration-count: infinite;
+  }
+  > div {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 48%;
+    backface-visibility: hidden;
+  }
+  i {
+    display: block;
+    height: 1px;
+    background: #000;
+    margin: 0 auto 2px;
+    margin: 0 auto 2.2px;
+    backface-visibility: hidden;
+    &:nth-child(2) { width: 75%; }
+    &:nth-child(3) { width: 81%; }
+    &:nth-child(4) { width: 87%; }
+    &:nth-child(6) { width: 71%; }
+    &:nth-child(7) { width: 81%; }
+    &:nth-child(8) { width: 65%; }
+    &:nth-child(9) { width: 83%; }
+    &:nth-child(10) { width: 75%; }
+    &:nth-child(12) { width: 86%; }
+    &:nth-child(14) { width: 65%; }
+    &:nth-child(16) { width: 75%; }
+    &:nth-child(18) { width: 83%; }
+  }
+  &:before,  &:after, em:after, em:before {
+    border-color: #000;
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 16px;
+    border-style: solid;
+    border-width: 0px;
+  }
+  &:before {
+    left: 0;
+    top: 0;
+    border-left-width: 1px;
+    border-top-width: 1px;
+  }
+  &:after {
+    right: 0;
+    top: 0;
+    border-right-width: 1px;
+    border-top-width: 1px;
+  }
+  em:before {
+    left: 0;
+    bottom: 0;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+  }
+  em:after {
+    right: 0;
+    bottom: 0;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+  }
+}
+
+@keyframes move {
+  0%, 100% { transform: translateY(490%); }
+  50% { transform: translateY(0%); }
+  75% { transform: translateY(272%); }
+}
+
+a {
+  color: $main;
+}
+
+
+.card{
+  background: $back !important;
+  border-radius: 0.6em;
+  border: 0.1em solid $main;
+  text-align: center;
+}
+.btn{
+  color: $main;
+  font-weight: bold;
+}
+.card-body{
+  font-size: 15px;
+}
+
+.eatencentral{
+  text-align: center;
+}
+
+.card-headerToday{
+  background: limegreen;
+}
+.card-headerTomorrow{
+  background: fuchsia;
+}
+.card-header2{
+  background: cornflowerblue;
+}
+
+.eatbutton{
+
+}
+
+.showingeatbutton{
+    font-weight: 700;
+  background-color: $back;
+
+text-transform: uppercase;
+
+padding: 20px;
+border: 4px solid $main !important;
+border-radius: 20px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+
+
+.showingeatbutton:hover{
+  color: #494949 !important;
+border-radius: 50px;
+border-color: #494949 !important;
+transition: all 0.3s ease 0s;
+}
+
+
+
+/* Once the browser targets #eat, the animation is triggered */
+
+#eat:target {
+  animation: play .4s steps(10) infinite;
+}
+
+.monster {
+  width: 190px;
+  height: 240px;
+  margin: 40px auto;
+  background: url('https://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/blog/monster.png') left center;
+}
+
+@keyframes play {
+	100% { background-position: -1900px; }
+}
+
+.foodicon{
+  width: 50px;
+  height: 50px;
+}

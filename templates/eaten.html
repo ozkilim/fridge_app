@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load static %}
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8">
+                <div class=eatencentral>
+
+                    <h1>
+                        Foods eaten!
+                    </h1>
+
+                    {% for eaten_food in eaten_foods %}
+                        <ul>
+                            <li>{{ eaten_food.foodname }} eaten on .... still add this...</li>
+
+                            <form action="{% url 'foodshow:eaten' %}" method="post">
+                                {% csrf_token %}
+                                <button type="button" class="btn btn-primary">
+                                    <input type="Submit" name="submit" value={{ eaten_food.fridge_food_id }}>
+                                    <img src="media/food_icons/{{ eaten_food.food_image }}" class ="foodicon" >
+
+                                    Was not eaten! Add back to fridge
+                                </button>
+                            </form>
+
+                        </ul>
+
+                    {% endfor %}
+                    <br>
+
+
+                    <div class="button">
+                        <div>
+                            <a class="center"><a href="{% url 'foodshow:index' %}" class="pushme"> <span
+                                    class="inner">back to the fridge</span></a>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-2">
+
+                </div>
+            </div>
+
+
+{% endblock %}

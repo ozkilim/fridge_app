@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+    <br>
+    <div class="container">
+  <div class="row">
+    <div class="col-3">
+
+    </div>
+    <div class="col-6">
+     <h1>add your custom foods</h1>
+
+        <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_table }}
+    <input type="submit" value="Submit">
+
+</form>
+
+
+
+    </div>
+    <div class="col-3">
+<div class="button">
+                        <div>
+                            <a class="center"><a href="{% url 'foodshow:index' %}" class="pushme"> <span
+                                    class="inner">back to the fridge</span></a>
+                            </a>
+                        </div>
+
+                    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="button">
+                        <div>
+                            <a class="center"><a href="{% url 'foodshow:fridge_manager' %}" class="pushme"> <span
+                                    class="inner">add custom foods to the fridge</span></a>
+                            </a>
+                        </div>
+
+                    </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
