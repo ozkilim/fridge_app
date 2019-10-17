@@ -34,6 +34,11 @@
     <title></title>
 </head>
 <body>
+      {% if request.user.is_authenticated %}
+      <li class="nav-item">
+ 	 	    <a class="nav-link" href="{% url 'foodshow:logout' %}">Logout</a>
+		  </li>
+      {% endif %}
 {% block content %}{% endblock %}
 </body>
 </html>
