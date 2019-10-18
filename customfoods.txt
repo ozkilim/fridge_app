@@ -1,1 +1,1 @@
-{"food_added_list": ["matey", "asdfgh", "asdfgh", "abc", "blorage", "rrert"]}
+{"food_added_list": []}

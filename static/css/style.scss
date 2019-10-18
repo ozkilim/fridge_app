@@ -453,3 +453,39 @@ font-family: black-burger;
   left: 100px;
 }
 
+.signup_username{
+      font-family: black-burger;
+}
+.signup_email{
+        font-family: black-burger;
+}
+
+.signup_password1{
+      font-family: MyWebFOnt;
+}
+
+.signup_password2{
+      font-family: MyWebFOnt;
+}
+
+
+.nav-logout-button{
+  position: relative;
+  top: 0px;
+  left: 100px;
+  border: 10px;
+  border-radius: 10px;
+  background-color:$main;
+  color: $back;
+  width: 425px;
+  font-weight: 500;
+}
+.nav-logout-button:hover{
+  background-color:$back;
+  color: $main;
+  font-weight: 800;
+}
+
+.clear-custom-foods-added{
+    visibility: hidden;
+}

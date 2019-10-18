@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/font/black-burger/PV_Black-Burger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font/black-burger/black-burger.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font/webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.4a174c783cb6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.5a8ef06524c9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.750af3038c31.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.8abd7e29cb66.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.989bffa50d5c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.98e5ef5b3fcb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.a29ef1edd6c3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.bc7ea4d38907.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customfoods.txt" beforeDir="false" afterPath="$PROJECT_DIR$/customfoods.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodshow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/eaten.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eaten.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fridge_manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fridge_manager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +42,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1S3oCXZxcNA915Urzi47c7lI4yf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -156,7 +167,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570801512178</updated>
-      <workItem from="1570801547480" duration="109973000" />
+      <workItem from="1570801547480" duration="112113000" />
+      <workItem from="1571339741975" duration="6068000" />
     </task>
     <servers />
   </component>
@@ -168,11 +180,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/foodscan$views.coverage" NAME="views Coverage Results" MODIFIED="1570895243974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foodshow" />

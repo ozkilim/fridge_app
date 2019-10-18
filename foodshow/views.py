@@ -30,6 +30,7 @@ def signup(request):
         if form.is_valid():
             user = form.save(commit=False)
             print(user)
+            # passwrd check here.... how is the page rendering password areas if its not in the form..
             user.is_patient = True
             user.is_active = False
             user.save()
@@ -259,6 +260,11 @@ def fridge_manager(request):
 
     # only problem is that it resets when you pass through each time...
     if request.method == 'POST':
+        if "clear-custom-foods-added" in request.POST:
+            data = {"food_added_list":[]}
+            with open('customfoods.txt', 'w') as outfile:
+                json.dump(data, outfile)
+            return redirect("foodshow:index")
         # create a form instance and populate it with data from the request:
         form = CustomFridgeFoodsForm(request.POST)
         with open('customfoods.txt') as json_file:
@@ -274,13 +280,18 @@ def fridge_manager(request):
             with open('customfoods.txt', 'w') as outfile:
                 json.dump(data, outfile)
 
+
+
         return redirect("foodshow:fridge_manager")
+
+
+
+
+
     else:
         with open('customfoods.txt') as json_file:
             context = json.load(json_file)
         passinlist = context["food_added_list"]
-        print(passinlist)
         form = CustomFridgeFoodsForm()
 
-    return render(request, "fridge_manager.html", {"form": form}, {"passinlist":passinlist})
-
+    return render(request, "fridge_manager.html", {"form": form, "passinlist":passinlist})

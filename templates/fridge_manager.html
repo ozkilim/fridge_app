@@ -17,29 +17,40 @@
             <div class="col-6">
                 <h1>Fridge manager</h1>
 
-                <form action="" method="post">
+                <form action="" method="post" name="put-custom-food-in-fridge">
                     {% csrf_token %}
                     {{ form }}
                     <input type="submit" value="Submit">
 
                 </form>
+                <br>
+                <h2>Custom foods added to the fridge!</h2>
+                <br>
+
+                {% for food in passinlist %}
+                    {{ food }},
+                {% endfor %}
 
 
-
-            </div>
-            <div class="col-3">
+                <form method="post" class="clear-custom-foods-added" name="clear-custom-foods-added">
+                    {% csrf_token %}
+                    <input type="submit" value="submit" name="clear-custom-foods-added" id="clear-custom-foods">
+                </form>
                 <div class="button">
                     <div>
-                        <a class="center"><a href="{% url 'foodshow:index' %}" class="pushme"> <span
+                        <a class="center"><a class="pushme"
+                                             onclick="document.getElementById('clear-custom-foods').click()"> <span
                                 class="inner">back to the fridge</span></a>
                         </a>
                     </div>
 
-                     {% for food in passinlist %}
-                   <h2>{{ food }}</h2>
-                {% endfor %}
 
                 </div>
+
+            </div>
+            <div class="col-3">
+
+
             </div>
         </div>
     </div>

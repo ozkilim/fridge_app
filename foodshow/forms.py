@@ -9,6 +9,20 @@ class CustomUserCreationForm(UserCreationForm):
     class Meta:
         model = CustomUser
         fields = ('username', 'email')
+        help_texts = {
+            'username': None,
+            'password': None,
+        }
+
+    def __init__(self, *args, **kwargs):
+        super(CustomUserCreationForm, self).__init__(*args, **kwargs)
+        self.fields['username'].widget.attrs.update({'class': 'signup_username'})
+        self.fields['email'].widget.attrs.update({'class': 'signup_email'})
+        self.fields['password1'].widget.attrs.update({'class': 'signup_password1'},widget=forms.TextInput())
+        self.fields['password2'].widget.attrs.update({'class': 'signup_password2'},widget=forms.TextInput())
+
+        for fieldname in ['username', 'password1', 'password2']:
+            self.fields[fieldname].help_text = None
 
 
 class CustomUserChangeForm(UserChangeForm):
