@@ -15,22 +15,23 @@
 
             </div>
             <div class="col-6">
-                <h1>Fridge manager</h1>
+                <h1 class="customfoodsheader" >FRIDGE MANAGER</h1>
+                                <h2 class="customfoodsheader" ></h2>
+
 
                 <form action="" method="post" name="put-custom-food-in-fridge">
                     {% csrf_token %}
                     {{ form }}
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" class ="customfoodaddbutton">
 
                 </form>
                 <br>
                 <h2>Custom foods added to the fridge!</h2>
-                <br>
-
+            <div class="customfoodsheader">
                 {% for food in passinlist %}
                     {{ food }},
                 {% endfor %}
-
+            </div>
 
                 <form method="post" class="clear-custom-foods-added" name="clear-custom-foods-added">
                     {% csrf_token %}

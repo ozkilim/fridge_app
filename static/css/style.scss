@@ -231,9 +231,31 @@ a {
 .card-header2{
   background: cornflowerblue;
 }
+.card-header3{
+  background: lightpink;
+}
+.card-header4{
+  background: deepskyblue;
+}
+.card-header5{
+  background: salmon;
+}
+.card-header6{
+  background: thistle;
+}
+.card-header7{
+  background: lightpink;
+}
+.card-header8{
+  background: peru;
+}
+.card-header8{
+  background: snow;
+}
+
 
 .eatbutton{
-
+  visibility: hidden;
 }
 
 .showingeatbutton{
@@ -408,6 +430,32 @@ span1{
   font-weight: 800;
 }
 
+
+.customfoodaddbutton{
+  position: relative;
+  top: 30px;
+  border: 10px;
+  border-radius: 10px;
+  background-color:$main;
+  color: $back;
+  width: 425px;
+  font-weight: 500;
+}
+.customfoodaddbutton:hover {
+  background-color:$back;
+  color: $main;
+  font-weight: 800;
+}
+
+.customfoodsheader{
+      font-family: black-burger;
+      color: $main;
+}
+
+
+
+
+
 .delete_foods{
   visibility: hidden;
 }
@@ -488,4 +536,21 @@ font-family: black-burger;
 
 .clear-custom-foods-added{
     visibility: hidden;
+}
+
+.hideeatenid{
+  visibility: hidden;
+}
+.foodnameinfridge{
+          font-family: black-burger;
+}
+
+.fridgeitemcontainer{
+  border:2px;
+  border-style:solid;
+  border-color: $main;
+  border-radius: 10px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+
 }

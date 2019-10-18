@@ -42,6 +42,12 @@
 
 {% if request.user.is_authenticated %}
     <a href="{% url 'foodshow:logout' %}" class="nav-logout-button">Logout</a>
+
+
+        <a href="{% url 'foodshow:fridge_manager' %}" class="nav-logout-button">Fridge Manager</a>
+            <a href="{% url 'foodshow:monitor' %}" class="nav-logout-button">Scan foods</a>
+
+
 {% endif %}
 
 {% block content %}{% endblock %}

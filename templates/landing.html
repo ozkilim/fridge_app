@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+    {% load static %}
+{% block content %}
+<h1>No Waste</h1>
+
+
+<h2>1.Scan your shopping list</h2>
+    <h2>2. Add custom foods (ie. mum's pasta)</h2>
+    <h2>3. Get updates about when your food should be eaten!</h2>
+
+
+    <img src=media/food_icons/background.png" class="foodicon">
+
+
+    <br>
+    <div class="button">
+                    <div>
+                        <a class="center"><a href="{% url 'foodshow:signup' %}" class="pushme"> <span
+                                class="inner"> sign up here</span></a>
+                        </a>
+                    </div>
+
+{% endblock %}

@@ -8,7 +8,6 @@ from django.contrib.sites.shortcuts import get_current_site
 from django.core.mail import EmailMessage
 from django.http import HttpResponse, request
 from django.shortcuts import render, redirect
-# Create your views here.
 from django.template.loader import render_to_string
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
@@ -18,9 +17,17 @@ from foodshow.forms import CustomUserCreationForm, CustomFoodsForm, CustomFridge
 from foodshow.models import Fridge, FoodData, CustomUser
 from foodshow.ocr_core import ocr_core
 from foodshow.tokens import account_activation_token
+import cv2
+from pyzbar import pyzbar
 
 UPLOAD_FOLDER = '/static/uploads/'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
+
+@login_exempt
+def landing(request):
+    return render(request, 'landing.html')
+
+
 
 
 @login_exempt
@@ -188,10 +195,6 @@ def eaten(request):
     return render(request, 'eaten.html', {"eaten_foods": eaten_foods})
 
 
-import cv2
-from pyzbar import pyzbar
-
-
 class VideoCamera(object):
     def __init__(self):
         # Using OpenCV to capture from device 0. If you have trouble capturing
@@ -245,6 +248,8 @@ def custom_foods(request):
         # create a form instance and populate it with data from the request:
         form = CustomFoodsForm(request.POST)
         if form.is_valid():
+            # add logic to check custom food does not already exist..
+
             form.save()
             print("saved")
             return render(request, "custom_foods.html")

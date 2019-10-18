@@ -9,12 +9,13 @@
 
     </div>
     <div class="col-6">
-     <h1>add your custom foods</h1>
+     <h1 class ="customfoodsheader">ADD A CUSTOM FOOD</h1>
+        <h2 class ="customfoodsheader">Tell us how long your custom food lasts</h2>
 
         <form action="" method="post">
     {% csrf_token %}
     {{ form.as_table }}
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" class="customfoodaddbutton">
 
 </form>
 

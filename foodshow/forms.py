@@ -39,7 +39,7 @@ class CustomFoodsForm(forms.ModelForm):
 
 class CustomFridgeFoodsForm(forms.ModelForm):
     fooddata = forms.ModelChoiceField(queryset=FoodData.objects.filter(image_of_food="general.svg")
-                                              ,empty_label="add a custom food to the fridge")
+                                              ,empty_label="Add a custom food to the fridge")
 
     class Meta:
         model = Fridge
