@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/food_icons/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.01b3bb988e0c.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.04ecae2dfd5f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.0c16c4bc5f39.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.13960f1cb0e7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.2deb55390a7e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.46146d969bb5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.4f9f59277fe9.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.66af449b1364.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.7afcd45dafb9.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.7c9ab75c66de.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.8e54f690e0fd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.9f3d895418b0.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.d66537c6c264.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.dd2c96bccdd1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.ee8c9c11639c.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.f19301a1a933.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.f4cee63278c9.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/landing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customfoods.txt" beforeDir="false" afterPath="$PROJECT_DIR$/customfoods.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodshow/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodshow/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodshow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/custom_foods.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/custom_foods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/eaten.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eaten.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fridge_manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fridge_manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodscan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodscan/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570801512178</updated>
       <workItem from="1570801547480" duration="112113000" />
-      <workItem from="1571339741975" duration="11879000" />
+      <workItem from="1571339741975" duration="12822000" />
     </task>
     <servers />
   </component>
