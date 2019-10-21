@@ -140,6 +140,45 @@ def index(request):
     return render(request, "index.html", {"food_list": food_list, "day_list": day_list})
 
 
+def sort_by_catagory(request):
+    fridge_foods = Fridge.objects.all()
+    food_list = []
+    if request.method == 'POST':
+        eaten_food = request.POST.get('submit')
+        get_eaten_food_from_fridge = Fridge.objects.get(id=eaten_food)
+        get_eaten_food_from_fridge.used = True
+        get_eaten_food_from_fridge.save()
+
+    for one_food in fridge_foods:
+        if one_food.used == False:
+            get_food_id = int(one_food.fooddata_id)
+            this_food = FoodData.objects.get(id=get_food_id)
+            good_for = this_food.days_good_for
+            foodname = FoodData.objects.get(id=get_food_id).food_name
+            food_image = FoodData.objects.get(id=get_food_id).image_of_food
+            scanneddate = one_food.date_scanned
+            end_date = scanneddate + datetime.timedelta(days=good_for)
+            utc = pytz.UTC
+            now = utc.localize(datetime.datetime.now())
+            time_left = end_date - now
+            days_left = time_left.days
+            if days_left == 0:
+                days_left = "Today"
+            elif days_left == 1:
+                days_left = "Tomorrow"
+            fridge_food_id = one_food.id
+
+            food_list.append({"foodname": foodname, "scanneddate": scanneddate, "days_left": days_left,
+                              "fridge_food_id": fridge_food_id, "food_image": food_image})
+
+
+# chagne logic here or sorting!
+
+    day_list = ["dairy", "fruit", "vegetable", "meat", "fish", "dairy", "grain", "other"]
+    return render(request, "index_by__food_catagory.html", {"food_list": food_list, "day_list": day_list})
+
+
+
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS

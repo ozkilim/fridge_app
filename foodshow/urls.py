@@ -14,6 +14,8 @@ app_name = 'foodshow'
 urlpatterns = [
     path('landing', views.landing, name='landing'),
     path('', views.index, name='index'),
+    path('sort_by_catagory', views.sort_by_catagory, name='sort_by_catagory'),
+
     path('login/', auth_views.LoginView.as_view(), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('signup/', views.signup, name='signup'),
