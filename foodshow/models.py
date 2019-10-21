@@ -21,7 +21,7 @@ class FoodData(models.Model):
         ('other', 'other'),
     )
     food_name = models.CharField(max_length=100)
-    days_good_for = models.IntegerField()
+    days_good_for = models.PositiveIntegerField()
     image_of_food = models.ImageField(upload_to='media/food_icons/', default='general.svg', null=True, blank=True)
     food_category = models.CharField(max_length=30, choices=CATEGORIES)
 

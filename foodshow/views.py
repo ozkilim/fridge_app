@@ -105,6 +105,8 @@ def fridge_filler(response, extracted_text):
     return redirect('foodshow:index')
 
 
+
+
 def index(request):
     fridge_foods = Fridge.objects.all()
     food_list = []
@@ -127,6 +129,10 @@ def index(request):
             now = utc.localize(datetime.datetime.now())
             time_left = end_date - now
             days_left = time_left.days
+
+            if days_left < 0:
+                one_food.delete()
+                # small cleaner code for any over due food to not clog up fridge database... this info may want to be kept for data analysis later down the line..
             if days_left == 0:
                 days_left = "Today"
             elif days_left == 1:
@@ -162,20 +168,16 @@ def sort_by_catagory(request):
             now = utc.localize(datetime.datetime.now())
             time_left = end_date - now
             days_left = time_left.days
-            if days_left == 0:
-                days_left = "Today"
-            elif days_left == 1:
-                days_left = "Tomorrow"
             fridge_food_id = one_food.id
-
+            food_catagory = FoodData.objects.get(id=get_food_id).food_category
             food_list.append({"foodname": foodname, "scanneddate": scanneddate, "days_left": days_left,
-                              "fridge_food_id": fridge_food_id, "food_image": food_image})
+                              "fridge_food_id": fridge_food_id, "food_image": food_image , "food_catagory":food_catagory})
 
 
 # chagne logic here or sorting!
 
-    day_list = ["dairy", "fruit", "vegetable", "meat", "fish", "dairy", "grain", "other"]
-    return render(request, "index_by__food_catagory.html", {"food_list": food_list, "day_list": day_list})
+    food_catagory_list = ["dairy", "fruit", "vegetable", "meat", "fish", "dairy", "grain", "other"]
+    return render(request, "index_by__food_catagory.html", {"food_list": food_list, "food_catagory_list": food_catagory_list})
 
 
 
@@ -289,12 +291,15 @@ def custom_foods(request):
         # create a form instance and populate it with data from the request:
         form = CustomFoodsForm(request.POST)
         if form.is_valid():
-            # add logic to check custom food does not already exist..
+            for foodobj in FoodData.objects.all():
+                if form.cleaned_data["food_name"] == foodobj.food_name:
+                    error = "This is not a custom food, add it from our data base of foods!"
+                    return render(request, "custom_foods.html", {"error": error})
+                    break
 
             form.save()
             print("saved")
             return render(request, "custom_foods.html")
-
 
     else:
         form = CustomFoodsForm()
@@ -303,7 +308,6 @@ def custom_foods(request):
 
 
 def fridge_manager(request):
-
     # only problem is that it resets when you pass through each time...
     if request.method == 'POST':
         if "clear-custom-foods-added" in request.POST:
@@ -325,15 +329,7 @@ def fridge_manager(request):
             print(data)
             with open('customfoods.txt', 'w') as outfile:
                 json.dump(data, outfile)
-
-
-
         return redirect("foodshow:fridge_manager")
-
-
-
-
-
     else:
         with open('customfoods.txt') as json_file:
             context = json.load(json_file)
@@ -341,3 +337,7 @@ def fridge_manager(request):
         form = CustomFridgeFoodsForm()
 
     return render(request, "fridge_manager.html", {"form": form, "passinlist":passinlist})
+
+
+
+

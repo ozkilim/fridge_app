@@ -552,8 +552,7 @@ font-family: black-burger;
   border-radius: 10px;
   padding-bottom: 4px;
   padding-top: 4px;
-  width: 100px;
-  height: 100px;
+
 }
 
 .username-control-login{
@@ -628,4 +627,13 @@ font-family: black-burger;
 
 #id_food_category{
   width: 150px;
+}
+
+.customfooderror{
+  color: crimson;
+  font-family: black-burger;
+}
+
+label{
+
 }

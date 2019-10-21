@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/index_by__food_catagory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.7a2d2b316a60.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.d77d957df016.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodshow/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodshow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seed.py" beforeDir="false" afterPath="$PROJECT_DIR$/seed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/custom_foods.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/custom_foods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index_by__food_catagory.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index_by__food_catagory.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570801512178</updated>
       <workItem from="1570801547480" duration="112113000" />
-      <workItem from="1571339741975" duration="23968000" />
+      <workItem from="1571339741975" duration="30357000" />
     </task>
     <servers />
   </component>

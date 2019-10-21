@@ -25,15 +25,10 @@ days_good_for_list =[4,40,30,7,20,5,6,23,28,15,28,8,20,140,60,9,55,6,80,55,20,15
 image_of_food_list =["broccoli.svg","orange.svg","apple.svg","artichoke.svg","aubergine.svg","avacado.svg","banana.svg","cabbage.svg","carrot.svg","cauliflour.svg","celery.svg","cherry.svg","chilli.svg","garlic.svg","ginger.png","grapes.svg","lemon.svg","lettuce.svg","olives.svg","onion.svg","pairs.svg","peach.svg","peas.svg","pepper.svg","pinapple.svg","potato.svg","pumpkin.svg","raddish.svg","raspberry.svg","soybean.svg","strawberry.svg","sweetpotato.svg","tomato.svg","watermelon.svg","zuchinni.svg"]
 
 
-
-# def create_food(number):
-# 	'''create x foods'''
-# 	for i in range(0, number):
-#
-# 	print(users)
-
-# this will take the scraped data....
-# make a function to accept all forms of charachters when comparing ni the db...
+catagory_list = ['vegetable','fruit', 'fruit','vegetable', 'vegetable','vegetable','fruit',
+                 'vegetable','vegetable','vegetable','vegetable','fruit', 'vegetable','vegetable','vegetable','fruit'
+                 'fruit','vegetable','vegetable','vegetable','fruit','fruit','vegetable','vegetable','fruit','vegetable','vegetable'
+                 'vegetable','fruit','grain','fruit','vegetable','vegetable','fruit','vegetable','vegetable','vegetable']
 
 
 
@@ -42,7 +37,11 @@ def seed_food_data(number):
         food_name = food_list[i]
         days_good_for = days_good_for_list[i]
         image_of_food = image_of_food_list[i]
-        food = FoodData(id=i+1, food_name=food_name, days_good_for=days_good_for, image_of_food=image_of_food)
+        food_category = catagory_list[i]
+        food = FoodData(id=i+1, food_name=food_name, days_good_for=days_good_for, image_of_food=image_of_food, food_category = food_category)
         food.save()
 seed_food_data(35)
 print("seeded!")
+
+
+
