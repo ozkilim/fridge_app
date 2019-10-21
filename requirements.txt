@@ -1,4 +1,5 @@
 pyzbar
+opencv-python
 cv2
 django
 -i https://pypi.org/simple/
@@ -10,4 +11,5 @@ markupsafe==1.1.1
 pillow==5.4.1
 pytesseract==0.2.6
 werkzeug==0.15.3
+
 
