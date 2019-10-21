@@ -2,6 +2,8 @@ pyzbar
 opencv-python
 django
 django_compressor
+crispy_forms
+tempus_dominus
 -i https://pypi.org/simple/
 click==7.0
 flask==1.0.2
