@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'foodshow.apps.FoodshowConfig',
     'compressor',
-    'crispy_forms',
     'tempus_dominus',
 ]
 
