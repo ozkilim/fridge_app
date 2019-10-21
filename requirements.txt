@@ -1,6 +1,5 @@
 pyzbar
 opencv-python
-cv2
 django
 -i https://pypi.org/simple/
 click==7.0
