@@ -136,7 +136,7 @@ def index(request):
             food_list.append({"foodname": foodname, "scanneddate": scanneddate, "days_left": days_left,
                               "fridge_food_id": fridge_food_id, "food_image": food_image})
 
-    day_list = ["Today", "Tomorrow", 2, 3, 4, 5, 6, 7, 8, 9]
+    day_list = ["Today", "Tomorrow", 2, 3, 4, 5, 6, 7, 8, "over 8 days"]
     return render(request, "index.html", {"food_list": food_list, "day_list": day_list})
 
 
@@ -149,12 +149,14 @@ def upload_page(request):
     if request.method == 'POST':
         # check if the post request has the file part
         if 'file' not in request.FILES:
-            return render(request, 'upload.html', msg='No file selected')
+            msg = 'No file selected'
+            return render(request, 'upload.html', {"msg":msg})
         file = request.FILES['file']
         # if user does not select file, browser also
         # submit a empty part without filename
         if file.name == '':
-            return render(request, 'upload.html', msg='No file selected')
+            msg = 'No file selected'
+            return render(request, 'upload.html', {"msg":msg})
 
         if file and allowed_file(file.name):
             # default_storage.save(os.path.join(os.getcwd() + UPLOAD_FOLDER, file.name), file)

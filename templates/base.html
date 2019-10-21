@@ -44,8 +44,21 @@
     <a href="{% url 'foodshow:logout' %}" class="nav-logout-button">Logout</a>
 
 
-        <a href="{% url 'foodshow:fridge_manager' %}" class="nav-logout-button">Fridge Manager</a>
-            <a href="{% url 'foodshow:monitor' %}" class="nav-logout-button">Scan foods</a>
+    <a href="{% url 'foodshow:fridge_manager' %}" class="nav-logout-button">Fridge Manager</a>
+    <a href="{% url 'foodshow:monitor' %}" class="nav-logout-button">Scan foods</a>
+    <a href="{% url 'foodshow:upload_page' %}" class="nav-logout-button">Upload recipts</a>
+
+
+    <a href="{% url 'foodshow:eaten' %}" class="nav-logout-button">Eaten foods</a>
+
+    <a href="{% url 'foodshow:custom_foods' %}" class="nav-logout-button">Add custom food</a>
+    <a href="{% url 'foodshow:fridge_manager' %}" class="nav-logout-button">Fridge manager</a>
+
+
+
+
+
+
 
 
 {% endif %}

@@ -552,5 +552,80 @@ font-family: black-burger;
   border-radius: 10px;
   padding-bottom: 4px;
   padding-top: 4px;
+  width: 100px;
+  height: 100px;
+}
 
+.username-control-login{
+  border-radius: 10px;
+
+}
+
+.password-control-login{
+    border-radius: 10px;
+}
+
+.signup_username{
+      border-radius: 10px;
+    width: 425px;
+}
+.signup_email{
+      border-radius: 10px;
+    width: 425px;
+
+}
+.signup_password1{
+      border-radius: 10px;
+    width: 425px;
+  font-family: MyWebFont;
+
+}
+.signup_password2{
+      border-radius: 10px;
+    width: 425px;
+}
+
+.uploadtitlte{
+  font-family: black-burger;
+}
+.chosefilebuttons{
+    position: relative;
+  top: 30px;
+  border: 10px;
+  border-radius: 10px;
+  background-color:$main;
+  color: $back;
+  width: 600px;
+  font-weight: 500;
+}
+
+
+.chosefilebuttons:hover {
+  background-color:$back;
+  color: $main;
+  font-weight: 800;
+}
+
+.hiddenuploadbutton{
+  visibility: hidden;
+}
+
+.upload{
+
+}
+
+.fulluploadcontainer{
+  position: relative;
+  right:50px
+}
+
+.signupform{
+  font-family: black-burger;
+}
+.signupformtitle{
+    font-family: black-burger;
+}
+
+#id_food_category{
+  width: 150px;
 }

@@ -34,7 +34,7 @@ class CustomUserChangeForm(UserChangeForm):
 class CustomFoodsForm(forms.ModelForm):
     class Meta:
         model = FoodData
-        fields = ['food_name', 'days_good_for']
+        fields = ['food_name', 'days_good_for', 'food_category']
 
 
 class CustomFridgeFoodsForm(forms.ModelForm):

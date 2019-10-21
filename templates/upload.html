@@ -3,6 +3,7 @@
 {% block content %}
     {% load static %}
     <br>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-2">
@@ -13,25 +14,25 @@
                     <h1>{{ msg }}</h1>
                 {% endif %}
 
-                <h1>Upload new File</h1>
+                <h1 class="uploadtitlte">Upload new File</h1>
 
                 <form method=post enctype=multipart/form-data>
                     {% csrf_token %}
-                    <p><input type=file name=file>
-
-
-
-
-                    <input type=submit value=Upload>
+                    <p class="chosefilebuttons"><input class ='chosefilebutton' type=file name=file ></p>
+                    <input type=submit value=Upload class="hiddenuploadbutton" id="hiddenuploadbutton">
                 </form>
             <br>
+            <br>
+            <br>
               <div>
+                  <div class="fulluploadcontainer">
                     <div class="upload">
                         <span1 class="glyphicon glyphicon-arrow-up arrow" aria-hidden="true"></span1>
                         <span1 class="glyphicon glyphicon-ok ok" aria-hidden="true"></span1>
                     </div>
-                    <div class="upload_button" data-text-swap="reset">upload</div>
+                    <div class="upload_button" data-text-swap="reset" onclick="document.getElementById('hiddenuploadbutton').click()">upload</div>
                     </div>
+              </div>
             <br>
 
                 <h1>Result:</h1>
