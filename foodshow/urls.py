@@ -29,5 +29,8 @@ urlpatterns = [
     path('upload_page', views.upload_page, name='upload_page'),
     url('monitor/', lambda r: StreamingHttpResponse(gen(VideoCamera()),
                                                     content_type='multipart/x-mixed-replace; boundary=frame'),
-        name='monitor')
+        name='monitor'),
+
+    path('fullfoodshow', views.fullfoodshow, name='fullfoodshow'),
+
 ]

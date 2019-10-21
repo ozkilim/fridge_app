@@ -22,7 +22,7 @@ food_list = ["broccoli", "orange", "apple", "artichoke", "aubergine", "avacado",
 
 days_good_for_list =[4,40,30,7,20,5,6,23,28,15,28,8,20,140,60,9,55,6,80,55,20,15,5,24,40,70,60,15,4,20,4,50,6,5,11]
 
-image_of_food_list =["broccoli.svg","orange.svg","apple.svg","artichoke.svg","aubergine.svg","avacado.svg","banana.svg","cabbage.svg","carrot.svg","cauliflour.svg","celery.svg","cherry.svg","chilli.svg","garlic.svg","ginger.png","grapes.svg","lemon.svg","lettuce.svg","olives.svg","onion.svg","pairs.svg","peach.svg","peas.svg","pepper.svg","pinapple.svg","potato.svg","pumpkin.svg","raddish.svg","raspberry.svg","soybean.svg","strawberry.svg","sweetpotato.svg","tomato.svg","watermelon.svg","zuchinni.svg"]
+image_of_food_list =["broccoli.svg","orange.svg","apple.svg","artichoke.svg","aubergine.svg","avacado.svg","banana.svg","cabbage.svg","carrot.svg","cauliflour.svg","celery.svg","cherry.svg","chilli.svg","garlic.svg","ginger.svg","grapes.svg","lemon.svg","lettuce.svg","olives.svg","onion.svg","pairs.svg","peach.svg","peas.svg","pepper.svg","pinapple.svg","potato.svg","pumpkin.svg","raddish.svg","raspberry.svg","soybean.svg","strawberry.svg","sweetpotato.svg","tomato.svg","watermelon.svg","zuchinni.svg"]
 
 
 catagory_list = ['vegetable','fruit', 'fruit','vegetable', 'vegetable','vegetable','fruit',

@@ -527,9 +527,13 @@ font-family: black-burger;
   color: $back;
   width: 425px;
   font-weight: 500;
+  font-size: 20px;
+  font-family: black-burger;
+
 }
 .nav-logout-button:hover{
   background-color:$back;
+    text-decoration: none;
   color: $main;
   font-weight: 800;
 }
@@ -636,4 +640,35 @@ font-family: black-burger;
 
 label{
 
+}
+
+#id_fooddata{
+  width: 425px;
+}
+
+.card-headermeat{
+  background: limegreen;
+}
+.card-headervegetable{
+  background: fuchsia;
+}
+.card-headerfish{
+  background: cornflowerblue;
+}
+.card-headerdairy{
+  background: lightpink;
+}
+.card-headergrain{
+  background: deepskyblue;
+}
+.card-headerother{
+  background: salmon;
+}
+.card-headerfruit{
+  background: thistle;
+}
+
+.openfridgebutton{
+  position: relative;
+  left:230px;
 }

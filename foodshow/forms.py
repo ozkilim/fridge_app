@@ -39,10 +39,10 @@ class CustomFoodsForm(forms.ModelForm):
 
 class CustomFridgeFoodsForm(forms.ModelForm):
     fooddata = forms.ModelChoiceField(queryset=FoodData.objects.filter(image_of_food="general.svg")
-                                              ,empty_label="Add a custom food to the fridge")
+                                              ,label="Add a custom food to the fridge", empty_label="pick a custom food")
 
     class Meta:
         model = Fridge
         fields = ['fooddata']
 
-# something wierd here.--- datanot moving in...
+

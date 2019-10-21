@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+
+                <h1 class="customfoodsheader">Add your foods one by one!</h1>
+
+                {% for food in food_data %}
+                    {{ food.id }}
+                    <img src="media/food_icons/{{ food.food_icon }}" class="foodicon">
+                {% endfor %}
+
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

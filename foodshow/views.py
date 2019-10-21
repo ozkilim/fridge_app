@@ -77,13 +77,10 @@ def activate(request, uidb64, token):
         return redirect('foodshow:index')
     else:
         return HttpResponse('Activation link is invalid!')
-
-
 # the list will come in from the cam module...
 
 def fridge_filler(response, extracted_text):
     # however it splits assuming perfect spacing.... more work needed here to clean real data...
-
     print(extracted_text)
     shopping_list = re.sub("[^\w]", " ", extracted_text.lower()).split()
     print(shopping_list)
@@ -93,11 +90,8 @@ def fridge_filler(response, extracted_text):
         # its a set of one and so we need to go inside the query set
         if database_food is not None:
             food_id_list.append(database_food.id)
-
     print(food_id_list)
-
     # still this function is adding it the list two times ...
-
     for i in food_id_list:
         food = Fridge(used=False, fooddata_id=i)
         food.save()
@@ -154,7 +148,6 @@ def sort_by_catagory(request):
         get_eaten_food_from_fridge = Fridge.objects.get(id=eaten_food)
         get_eaten_food_from_fridge.used = True
         get_eaten_food_from_fridge.save()
-
     for one_food in fridge_foods:
         if one_food.used == False:
             get_food_id = int(one_food.fooddata_id)
@@ -172,11 +165,9 @@ def sort_by_catagory(request):
             food_catagory = FoodData.objects.get(id=get_food_id).food_category
             food_list.append({"foodname": foodname, "scanneddate": scanneddate, "days_left": days_left,
                               "fridge_food_id": fridge_food_id, "food_image": food_image , "food_catagory":food_catagory})
-
-
 # chagne logic here or sorting!
 
-    food_catagory_list = ["dairy", "fruit", "vegetable", "meat", "fish", "dairy", "grain", "other"]
+    food_catagory_list = ["dairy", "fruit", "vegetable", "meat", "fish", "grain", "other"]
     return render(request, "index_by__food_catagory.html", {"food_list": food_list, "food_catagory_list": food_catagory_list})
 
 
@@ -258,14 +249,12 @@ class VideoCamera(object):
         # video stream.
 
         # _, frame = cap.read()
-
         decodedObjects = pyzbar.decode(image)
         thedata = None
         for obj in decodedObjects:
             print("Data", obj.data)
             # this is the print...
             thedata = obj.data
-
         ret, jpeg = cv2.imencode('.jpg', image)
 
         return jpeg.tobytes(), thedata
@@ -296,11 +285,9 @@ def custom_foods(request):
                     error = "This is not a custom food, add it from our data base of foods!"
                     return render(request, "custom_foods.html", {"error": error})
                     break
-
             form.save()
             print("saved")
             return render(request, "custom_foods.html")
-
     else:
         form = CustomFoodsForm()
     # payment_to = scanner.camera()
@@ -340,4 +327,13 @@ def fridge_manager(request):
 
 
 
-
+def fullfoodshow(request):
+    get_all_foods = FoodData.objects.all()
+    food_data_list = []
+    for foodobj in get_all_foods:
+        if foodobj.image_of_food != "general.svg":
+            food_icon = foodobj.image_of_food
+            food_id = foodobj.id
+            food_category = foodobj.food_category
+            food_data_list.append({"food_icon":food_icon,"food_id":food_id, "food_category":food_category })
+    return render(request, "fullfoodshow.html" ,{"food_data":food_data_list})
