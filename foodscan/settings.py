@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'foodshow.apps.FoodshowConfig',
     'compressor',
-    'tempus_dominus',
 ]
 
 MIDDLEWARE = [

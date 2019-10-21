@@ -2,7 +2,6 @@ pyzbar
 opencv-python
 django
 django_compressor
-tempus_dominus
 -i https://pypi.org/simple/
 click==7.0
 flask==1.0.2
