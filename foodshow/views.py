@@ -184,33 +184,34 @@ def upload_page(request):
             msg = 'No file selected'
             return render(request, 'upload.html', {"msg":msg})
         file = request.FILES['file']
-        # if user does not select file, browser also
-        # submit a empty part without filename
+            # if user does not select file, browser also
+            # submit a empty part without filename
         if file.name == '':
             msg = 'No file selected'
             return render(request, 'upload.html', {"msg":msg})
 
         if file and allowed_file(file.name):
-            # default_storage.save(os.path.join(os.getcwd() + UPLOAD_FOLDER, file.name), file)
+                # default_storage.save(os.path.join(os.getcwd() + UPLOAD_FOLDER, file.name), file)
 
-            # call the OCR function on it
+                # call the OCR function on it
             extracted_text = ocr_core(file)
 
             print(str(extracted_text))
             print("here is the food!")
-            # extract the text and display it
-            # then make user say yes or no.../correct the text...?
-            # text correction/edits could take place here
-
-
-            return redirect('foodshow:fridge_filler', extracted_text=str(extracted_text))
+                # extract the text and display it
+                # then make user say yes or no.../correct the text...?
+                # text correction/edits could take place here
+                # before redirect show the message...
+            trial_output = str(extracted_text)
+            return render(request ,"upload.html", {"trial_output":trial_output})
 
     elif request.method == 'GET':
+
         return render(request, 'upload.html')
 
 
 def eaten(request):
-    if request.method == 'POST' :
+    if request.method == 'POST':
         if 'submit' in request.POST:
             non_eaten_food_id = request.POST.get('submit')
             get_eaten_food_from_fridge = Fridge.objects.get(id=non_eaten_food_id)

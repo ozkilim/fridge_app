@@ -16,32 +16,48 @@
 
                 <h1 class="uploadtitlte">Upload new File</h1>
 
-                <form method=post enctype=multipart/form-data>
+                <form method=post enctype=multipart/form-data name="upload" >
                     {% csrf_token %}
-                    <p class="chosefilebuttons"><input class ='chosefilebutton' type=file name=file ></p>
+                    <p class="chosefilebuttons"><input class='chosefilebutton' type=file name=file></p>
                     <input type=submit value=Upload class="hiddenuploadbutton" id="hiddenuploadbutton">
                 </form>
-            <br>
-            <br>
-            <br>
-              <div>
-                  <div class="fulluploadcontainer">
-                    <div class="upload">
-                        <span1 class="glyphicon glyphicon-arrow-up arrow" aria-hidden="true"></span1>
-                        <span1 class="glyphicon glyphicon-ok ok" aria-hidden="true"></span1>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <div class="fulluploadcontainer">
+                        <div class="upload">
+                            <span1 class="glyphicon glyphicon-arrow-up arrow" aria-hidden="true"></span1>
+                            <span1 class="glyphicon glyphicon-ok ok" aria-hidden="true"></span1>
+                        </div>
+                        <div class="upload_button" data-text-swap="reset"
+                             onclick="document.getElementById('hiddenuploadbutton').click()">upload
+                        </div>
                     </div>
-                    <div class="upload_button" data-text-swap="reset" onclick="document.getElementById('hiddenuploadbutton').click()">upload</div>
-                    </div>
-              </div>
-            <br>
+                </div>
+                <br>
 
                 <h1>Result:</h1>
                 {% if img_src %}
                     <img src="{{ img_src }}">
                 {% endif %}
 
-                {% if extracted_text %}
-                    <p> The extracted text from the image above is: <b> {{ extracted_text }} </b></p>
+                {% if trial_output %}
+                    <p> The extracted text from the image above is: <b> {{ trial_output }} </b></p>
+                    <p>would you like to add these food/s to your fridge?</p>
+
+                    <form method=post name="confirmform" action="fridge_filler/{{ trial_output }}">
+                                        {% csrf_token %}
+                        <button type=submit value="yes" name="yes" class="confirmformbuttonyes"  >YES</button>
+
+                    </form>
+                        <br>
+                      <form method=post name="confirmform"  action="upload_page">
+                                        {% csrf_token %}
+                        <button type=submit value="no" name="yes" class="confirmformbuttonno">No</button>
+
+                    </form>
+
 
                 {% else %}
                     The extracted text will be displayed here

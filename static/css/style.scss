@@ -670,5 +670,41 @@ label{
 
 .openfridgebutton{
   position: relative;
-  left:230px;
+  left:170px;
 }
+
+.confirmformbuttonyes{
+    position: relative;
+  top: 30px;
+  border: 10px;
+  border-radius: 10px;
+  background-color:$main;
+  color: $back;
+  width: 600px;
+  font-weight: 500;
+}
+.confirmformbuttonyes:hover{
+    background-color:$back;
+    text-decoration: none;
+  color: $main;
+  font-weight: 800;
+}
+
+
+.confirmformbuttonno{
+    position: relative;
+  top: 30px;
+  border: 10px;
+  border-radius: 10px;
+  background-color:$main;
+  color: $back;
+  width: 600px;
+  font-weight: 500;
+}
+.confirmformbuttonno:hover{
+    background-color:$back;
+    text-decoration: none;
+  color: $main;
+  font-weight: 800;
+}
+

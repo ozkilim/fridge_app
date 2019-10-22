@@ -1,1 +1,1 @@
-{"food_added_list": ["strawberry pie", "strawberry pie"]}
+{"food_added_list":[]}
