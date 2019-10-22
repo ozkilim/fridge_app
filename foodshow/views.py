@@ -199,6 +199,10 @@ def upload_page(request):
             print(str(extracted_text))
             print("here is the food!")
             # extract the text and display it
+            # then make user say yes or no.../correct the text...?
+            # text correction/edits could take place here
+
+
             return redirect('foodshow:fridge_filler', extracted_text=str(extracted_text))
 
     elif request.method == 'GET':
