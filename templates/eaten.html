@@ -8,17 +8,16 @@
             <div class="col-2">
 
             </div>
-            <div class="col-8">
+            <div class="col-8 col-centered">
 
                 <h1 class ="font_test">
                     Foods eaten!
                 </h1>
                 {% for eaten_food in eaten_foods %}
 
-
                         <form action="{% url 'foodshow:eaten' %}" method="post">
                             {% csrf_token %}
-                            <button type="button" class="btn btn-primary" onclick="document.getElementById({{ eaten_food.fridge_food_id }}).click()">
+                            <button type="button" class="signup_button" onclick="document.getElementById({{ eaten_food.fridge_food_id }}).click()">
                                 <input type="Submit" name="submit" value={{ eaten_food.fridge_food_id }} id={{ eaten_food.fridge_food_id }} class="hideeatenid">
                                 <img src="media/food_icons/{{ eaten_food.food_image }}" class="foodicon">
                                                         {{ eaten_food.foodname }} eaten on Was not eaten! Add back to fridge
@@ -41,6 +40,7 @@
                                 class="inner">back to the fridge</span></a>
                         </a>
                     </div>
+
 
 
                 <br>
@@ -67,7 +67,5 @@
             </div>
         </div>
     </div>
-    </div>
-
 
 {% endblock %}

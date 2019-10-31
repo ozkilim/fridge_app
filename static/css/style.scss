@@ -775,3 +775,10 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.col-centered{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
