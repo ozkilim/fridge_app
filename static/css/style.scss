@@ -299,8 +299,8 @@ transition: all 0.3s ease 0s;
 }
 
 .foodicon{
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 }
 
 
@@ -527,15 +527,19 @@ font-family: black-burger;
   color: $back;
   width: 425px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   font-family: black-burger;
-
 }
 .nav-logout-button:hover{
   background-color:$back;
     text-decoration: none;
   color: $main;
   font-weight: 800;
+}
+
+
+li {
+  display: inline;
 }
 
 .clear-custom-foods-added{
