@@ -155,8 +155,6 @@ EMAIL_HOST_USER = 'ozsamkilim@gmail.com'
 EMAIL_HOST_PASSWORD = 'monkey/218'
 EMAIL_USE_TLS = True
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-
-
 LOGIN_REDIRECT_URL = 'foodshow:index'
 LOGOUT_REDIRECT_URL = 'foodshow:login'
 LOGIN_URL = '/login'

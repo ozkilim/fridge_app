@@ -28,10 +28,18 @@ urlpatterns = [
     path('fridge_filler/<extracted_text>', views.fridge_filler, name='fridge_filler'),
     path('upload_page', views.upload_page, name='upload_page'),
     url('monitor/', lambda r: StreamingHttpResponse(gen(VideoCamera()),
-                                                    content_type='multipart/x-mixed-replace; boundary=frame'),
+                                                    content_type='multipart/x-mixed-replace; boundary=frame' , name='monitor'),
         name='monitor'),
 
     path('fullfoodshow', views.fullfoodshow, name='fullfoodshow'),
     path('pushsettings', views.pushsettings, name='pushsettings'),
     path('toggle/', views.toggle, name='toggle'),
+    url('^', include('django.contrib.auth.urls')),
+
+    # url(r'^password_reset/$', auth_views.password_reset, name='password_reset'),
+    # url(r'^password_reset/done/$', auth_views.password_reset_done, name='password_reset_done'),
+    # url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
+    #     auth_views.password_reset_confirm, name='password_reset_confirm'),
+    # url(r'^reset/done/$', auth_views.password_reset_complete, name='password_reset_complete'),
+
 ]

@@ -271,13 +271,9 @@ def gen(camera):
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
         if camera.get_frame()[1] is not None:
-            break
-
-    return shopping()
+            return render(request, "index.html")
 
 
-def shopping(request):
-    return render(request, 'shopping.html')
 
 
 def custom_foods(request):
