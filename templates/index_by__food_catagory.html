@@ -91,7 +91,7 @@
                                                     only {{ food.days_left }} days left to eat it
                                                     <img src="media/food_icons/{{ food.food_image }}" class="foodicon">
 
-                                                    <form action="{% url 'foodshow:index' %}" method="post" name="submit">
+                                                    <form action="{% url 'foodshow:sort_by_catagory' %}" method="post" name="submit">
                                                         {% csrf_token %}
                                                         <input class="eatbutton" type="Submit" name="submit"
                                                                value="{{ food.fridge_food_id }}" id="{{ food.fridge_food_id }}">
