@@ -342,3 +342,6 @@ def fullfoodshow(request):
             food_category = foodobj.food_category
             food_data_list.append({"food_icon":food_icon,"food_id":food_id, "food_category":food_category })
     return render(request, "fullfoodshow.html" ,{"food_data":food_data_list})
+
+def pushsettings(request):
+    return render(request, "pushsettings.html" )

@@ -32,5 +32,5 @@ urlpatterns = [
         name='monitor'),
 
     path('fullfoodshow', views.fullfoodshow, name='fullfoodshow'),
-
+    path('pushsettings', views.pushsettings, name='pushsettings')
 ]
