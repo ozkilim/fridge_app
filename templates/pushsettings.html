@@ -3,14 +3,38 @@
     {% load static %}
     <div class="container">
         <div class="row">
-             <div class="col-2">
+            <div class="col-2">
 
             </div>
-             <div class="col-8">
-                 <br>
-            <h1>updateyour settings here</h1>
+            <div class="col-8">
+                <br>
+                <h1>updateyour settings here</h1>
+                Would you like to see everything that you need to finish today by email each day?...
+                if so --> turn the email sender to on...
+                <br>
+                <br>
+                 <div style="display:inline-block">
+                    <label>want the email?</label>
+                    <label class="switch">
+                        <input type="checkbox" id="checkbox" value="{{ workexperiance.is_working }}">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.3.1.js"></script> <!-- Import Jquery Here-->
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('#checkbox').change(function () {
+                            $.post("/toggle/", {
+                                id: '{{workexperiance.id}}',
+                                isworking: this.checked,
+                                csrfmiddlewaretoken: '{{ csrf_token }}'
+                            });
+                        });
+                    });
+                </script>
+
             </div>
-             <div class="col-2">
+            <div class="col-2">
 
             </div>
         </div>

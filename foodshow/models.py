@@ -4,7 +4,8 @@ from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 class CustomUser(AbstractUser):
-    pass
+    send_daily_emails = models.BooleanField(default=False)
+
 
     def __str__(self):
         return self.email

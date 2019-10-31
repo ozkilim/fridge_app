@@ -344,4 +344,21 @@ def fullfoodshow(request):
     return render(request, "fullfoodshow.html" ,{"food_data":food_data_list})
 
 def pushsettings(request):
-    return render(request, "pushsettings.html" )
+
+        # first build the button on the front end..
+        # get the user that is using the site , then get their object and change...
+        #
+        # CustomUser.objects.
+        # just make the toggle change the nature or that custom user object feild emails......
+
+    w, created = CustomUser.objects.get_or_create(id=1)
+
+    return render(request, "pushsettings.html" ,{'workexperiance': w})
+
+def toggle(request):
+    w = CustomUser.objects.get(id=request.POST['id'])
+    w.send_daily_emails = request.POST['isworking'] == 'true'
+    w.save()
+
+
+    return HttpResponse('success')

@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.1119cecd4b81.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.7a6903093159.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.957d5dd0f289.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.983e08ecb513.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.aa2dcd6b319e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.1b4813a01c16.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.6418db755d9c.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pushsettings.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pushsettings.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -163,7 +163,7 @@
       <workItem from="1570801547480" duration="112113000" />
       <workItem from="1571339741975" duration="43402000" />
       <workItem from="1571736376869" duration="4903000" />
-      <workItem from="1572512323187" duration="4476000" />
+      <workItem from="1572512323187" duration="6606000" />
     </task>
     <servers />
   </component>

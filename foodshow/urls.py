@@ -32,5 +32,6 @@ urlpatterns = [
         name='monitor'),
 
     path('fullfoodshow', views.fullfoodshow, name='fullfoodshow'),
-    path('pushsettings', views.pushsettings, name='pushsettings')
+    path('pushsettings', views.pushsettings, name='pushsettings'),
+    path('toggle/', views.toggle, name='toggle'),
 ]
