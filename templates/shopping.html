@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>shopping1</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load static %}
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{ form.as_table }}
+                    <br>
+                    <input type="submit" value="Submit" class="customfoodaddbutton">
+
+                </form>
+                <br>
+                {% for obj in shopping_list %}
+                    <h1>{{ obj }}</h1>
+                {% endfor %}
+
+            <br>
+             <p>have you been shopping now and would you like to add these food/s to your fridge?</p>
+
+                    <form method=post name="confirmform" action="fridge_filler/{{ shopping_list }}">
+                                        {% csrf_token %}
+                        <button type=submit value="yes" name="yes" class="confirmformbuttonyes"  >YES</button>
+
+                    </form>
+
+
+            </div>
+            <div class="col-2">
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

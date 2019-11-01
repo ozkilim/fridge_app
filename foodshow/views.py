@@ -13,7 +13,7 @@ from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 
 from foodscan.middleware.login_exempt import login_exempt
-from foodshow.forms import CustomUserCreationForm, CustomFoodsForm, CustomFridgeFoodsForm
+from foodshow.forms import CustomUserCreationForm, CustomFoodsForm, CustomFridgeFoodsForm, ShoppingForm
 from foodshow.models import Fridge, FoodData, CustomUser
 from foodshow.ocr_core import ocr_core
 from foodshow.tokens import account_activation_token
@@ -314,7 +314,6 @@ def fridge_manager(request):
             thisfood = FoodData.objects.get(id=foodid).food_name
             food_added_list.append(thisfood)
             data = {"food_added_list":food_added_list}
-            print(data)
             with open('customfoods.txt', 'w') as outfile:
                 json.dump(data, outfile)
         return redirect("foodshow:fridge_manager")
@@ -358,3 +357,32 @@ def toggle(request):
 
 
     return HttpResponse('success')
+
+def shopping(request):
+    with open('shopping_list.txt') as json_file:
+        context = json.load(json_file)
+    shopping_list = context["shopping_list"]
+
+    if request.method == 'POST':
+        form = ShoppingForm(request.POST)
+        if form.is_valid():
+
+            x = form.cleaned_data
+
+            print(x)
+
+            # check we are using correct model form..
+            foodobj =x['foods']
+            thisfood = foodobj.food_name
+            shopping_list.append(thisfood)
+            data = {"shopping_list":shopping_list}
+            with open('shopping_list.txt', 'w') as outfile:
+                json.dump(data, outfile)
+    else:
+        with open('shopping_list.txt') as json_file:
+            context = json.load(json_file)
+        shopping_list = context["shopping_list"]
+
+        form = ShoppingForm()
+
+    return render(request, "shopping.html",{"form":form, "shopping_list":shopping_list})

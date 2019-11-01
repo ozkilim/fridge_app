@@ -37,6 +37,7 @@ class CustomFoodsForm(forms.ModelForm):
         fields = ['food_name', 'days_good_for', 'food_category']
 
 
+
 class CustomFridgeFoodsForm(forms.ModelForm):
     fooddata = forms.ModelChoiceField(queryset=FoodData.objects.filter(image_of_food="general.svg")
                                               ,label="Add a custom food to the fridge", empty_label="pick a custom food")
@@ -46,3 +47,9 @@ class CustomFridgeFoodsForm(forms.ModelForm):
         fields = ['fooddata']
 
 
+class ShoppingForm(forms.ModelForm):
+    foods = forms.ModelChoiceField(queryset=FoodData.objects.all()
+                                      ,label="Add a food to your shopping list", empty_label="pick a food")
+    class Meta:
+        model = FoodData
+        fields = ['foods']

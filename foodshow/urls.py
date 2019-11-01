@@ -35,6 +35,7 @@ urlpatterns = [
     path('pushsettings', views.pushsettings, name='pushsettings'),
     path('toggle/', views.toggle, name='toggle'),
     url('^', include('django.contrib.auth.urls')),
+    path('shopping', views.shopping, name='shopping'),
 
     # url(r'^password_reset/$', auth_views.password_reset, name='password_reset'),
     # url(r'^password_reset/done/$', auth_views.password_reset_done, name='password_reset_done'),
