@@ -21,8 +21,9 @@
                 {% for obj in shopping_list %}
                     <form class="button" method="post" name="delete_from_shopping_list">
                         {% csrf_token %}
-                        <button type="submit" value="{{ obj }}" name="delete_from_shopping_list">{{ obj }}</button>
+                        <li><button type="submit" value="{{ obj }}" name="delete_from_shopping_list" class="shoppinglistitem">{{ obj }}</button></li>
                     </form>
+
                     <br>
                 {% endfor %}
 

@@ -65,7 +65,7 @@ $sans: 'Open Sans', sans-serif;
 
 body{
   background: $back !important;
-  font-family: $sans !important;
+  font-family: black-burger !important;
   color: $main !important;
   font-size: 5vh;
 }
@@ -674,7 +674,7 @@ label{
 
 .openfridgebutton{
   position: relative;
-  left:170px;
+  left:270px;
 }
 
 .confirmformbuttonyes{
@@ -798,4 +798,25 @@ display: block;
   position: relative;
   left: 210px;
   font-family: black-burger;
+}
+
+.shoppinglistitem{
+  background-color: $main;
+  border-radius: 5px;
+  color: $back;
+  font-family: black-burger;
+}
+.shoppinglistitem:hover{
+    color: $main;
+  background-color: $back;
+
+}
+
+#id_foods{
+  font-family: black-burger;
+
+}
+
+label{
+    font-family: black-burger;
 }
