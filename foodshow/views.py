@@ -362,7 +362,6 @@ def shopping(request):
     with open('shopping_list.txt') as json_file:
         context = json.load(json_file)
     shopping_list = context["shopping_list"]
-
     if "clear_shopping_list" in request.POST:
         data = {"shopping_list": []}
         with open('shopping_list.txt', 'w') as outfile:

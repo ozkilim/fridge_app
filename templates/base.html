@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,8 +36,9 @@
 
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 
-
+<link rel="icon" src="media/food_icons/eatenfood.png" href="favicon.ico">
     <title></title>
+
 </head>
 <body>
 
@@ -49,7 +51,7 @@
         <li><a href="{% url 'foodshow:shopping' %}" class="nav-logout-button">Shopping list<img src="media/food_icons/shopping.png" class="foodicon"></a></li>
 
     <li><a href="{% url 'foodshow:upload_page' %}" class="nav-logout-button">Upload recipts <img src="media/food_icons/recipt.png" class="foodicon"></a></li>
-    <li><a href="{% url 'foodshow:eaten' %}" class="nav-logout-button">Eaten foods    <img src="media/food_icons/eatenfood.png" class="foodicon"></a></li>
+    <li><a href="{% url 'foodshow:eaten' %}" class="nav-logout-button">Eaten foods <img src="media/food_icons/eatenfood.png" class="foodicon"></a></li>
     <li><a href="{% url 'foodshow:custom_foods' %}" class="nav-logout-button">Add custom food<img src="media/food_icons/general.svg" class="foodicon"></a></li>
     <li><a href="{% url 'foodshow:fridge_manager' %}" class="nav-logout-button">Fridge manager <img src="media/food_icons/manager.png" class="foodicon"></a></li>
     <li><a href="{% url 'foodshow:logout' %}" class="nav-logout-button">Logout <img src="media/food_icons/logout.png" class="foodicon"></a></li>
