@@ -19,18 +19,26 @@
                 </form>
                 <br>
                 {% for obj in shopping_list %}
-                    <h1>{{ obj }}</h1>
+                    <form class="button" method="post" name="delete_from_shopping_list">
+                        {% csrf_token %}
+                        <button type="submit" value="{{ obj }}" name="delete_from_shopping_list">{{ obj }}</button>
+                    </form>
+                    <br>
                 {% endfor %}
 
             <br>
              <p>have you been shopping now and would you like to add these food/s to your fridge?</p>
 
+            <form method="post" class="clear_shopping_list" name="clear_shopping_list">
+                    {% csrf_token %}
+                    <input type="submit" value="submit" name="clear_shopping_list" id="clear_shopping_list">
+                </form>
+
                     <form method=post name="confirmform" action="fridge_filler/{{ shopping_list }}">
                                         {% csrf_token %}
-                        <button type=submit value="yes" name="yes" class="confirmformbuttonyes"  >YES</button>
+                        <button type=submit value="yes" name="yes" class="confirmformbuttonyes" onclick="document.getElementById('clear_shopping_list').click()" >YES</button>
 
                     </form>
-
 
             </div>
             <div class="col-2">

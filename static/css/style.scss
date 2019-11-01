@@ -527,7 +527,7 @@ font-family: black-burger;
   color: $back;
   width: 425px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   font-family: black-burger;
 }
 .nav-logout-button:hover{
@@ -781,4 +781,8 @@ display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.clear_shopping_list{
+  visibility: hidden;
 }

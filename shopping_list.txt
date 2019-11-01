@@ -1,1 +1,1 @@
-{"shopping_list": ["avacado", "chilli", "banana", "lemon"]}
+{"shopping_list": []}

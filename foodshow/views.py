@@ -363,26 +363,38 @@ def shopping(request):
         context = json.load(json_file)
     shopping_list = context["shopping_list"]
 
-    if request.method == 'POST':
-        form = ShoppingForm(request.POST)
-        if form.is_valid():
+    if "clear_shopping_list" in request.POST:
+        data = {"shopping_list": []}
+        with open('shopping_list.txt', 'w') as outfile:
+            json.dump(data, outfile)
+        return redirect("foodshow:index")
 
-            x = form.cleaned_data
+    elif request.method == 'POST':
+        if 'delete_from_shopping_list' in request.POST:
+            delete_food = request.POST.get('delete_from_shopping_list')
 
-            print(x)
+            shopping_list.remove(delete_food)
 
-            # check we are using correct model form..
-            foodobj =x['foods']
-            thisfood = foodobj.food_name
-            shopping_list.append(thisfood)
-            data = {"shopping_list":shopping_list}
+            data = {"shopping_list": shopping_list}
             with open('shopping_list.txt', 'w') as outfile:
                 json.dump(data, outfile)
+        else:
+            form = ShoppingForm(request.POST)
+            if form.is_valid():
+
+                x = form.cleaned_data
+                foodobj =x['foods']
+                thisfood = foodobj.food_name
+                shopping_list.append(thisfood)
+                data = {"shopping_list":shopping_list}
+                with open('shopping_list.txt', 'w') as outfile:
+                    json.dump(data, outfile)
+
     else:
         with open('shopping_list.txt') as json_file:
             context = json.load(json_file)
         shopping_list = context["shopping_list"]
 
-        form = ShoppingForm()
+    form = ShoppingForm()
 
     return render(request, "shopping.html",{"form":form, "shopping_list":shopping_list})
