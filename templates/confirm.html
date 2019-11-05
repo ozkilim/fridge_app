@@ -1,9 +1,12 @@
 {% load compress %}
 {% load staticfiles %}
 {% load static %}
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-     <meta charset="UTF-8">
+
+    <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -32,41 +35,15 @@
             crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+    <link rel="icon" src="media/food_icons/eatenfood.png" href="favicon.ico">
+    <title></title>
+
 </head>
 <body>
-<br>
-     <div class="container">
-    <div class="row">
 
-        <div class="col-2">
-        </div>
-        <div class="col-8">
+<img src="{% static '/food_icons/confirm.png' %}" class="confirmimage">
 
- <img src="static/food_icons/FridgeFlip.png">
-            <br>
-            <h1 class ="howitworks">How it works</h1>
-            <br>
-        <img src="static/food_icons/flipfridgediagram.png">
-            <br>
-            <br>
-            <div class ="signuponlandingdiv">
-            <div class="button">
-                <div>
-                    <a class="center"><a href="{% url 'foodshow:signup' %}" class="pushme"> <span
-                            class="inner"> Give it a go!</span></a>
-                    </a>
-                </div>
-                </div>
-
-
-            </div>
-            <div class="col-2">
-            </div>
-        </div>
-    </div>
-    </div>
 
 </body>
 </html>
-
-

@@ -2,10 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/media/food_icons/confirm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.0122e940bdab.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.4cfe4957584c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.6876be16be85.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.6afc229e15dc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.91ad381e74be.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.99cce6592974.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.9bbf7d3c075f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.b08573046dee.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.b1bb6eaae9d6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.b3a776c6b472.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.be22bd2ad082.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.d5a66c481c45.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.e3d25deb32b8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/FridgeFlip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/apple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/artichoke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/aubergine.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/ava.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/avacado.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/banana.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/broccoli.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/cabbage.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/carrot.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/cauliflour.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/celery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/cherry.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/chilli.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/confirm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/cucumber.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/eatenfood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/flipfridgediagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/fridge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/garlic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/general.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/ginger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/grapes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/lemon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/lettuce.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/logout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/manager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/olives.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/onion.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/orange.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/pairs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/peach.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/peas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/pepper.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/pinapple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/potato.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/pumpkin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/raddish.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/raspberry.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/recipt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/redcabbage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/scan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/shopping.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/soybean.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/squash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/strawberry.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/sweetie.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/sweetpotato.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/time.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/tomato.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/tuna.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/watermelon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/food_icons/zuchinni.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/confirm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodscan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodscan/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/landing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +232,9 @@
       <workItem from="1572632671416" duration="2693000" />
       <workItem from="1572899132403" duration="81000" />
       <workItem from="1572899551399" duration="745000" />
-      <workItem from="1572937833197" duration="771000" />
+      <workItem from="1572937833197" duration="1495000" />
+      <workItem from="1572942285508" duration="1687000" />
+      <workItem from="1572944118931" duration="834000" />
     </task>
     <servers />
   </component>
@@ -183,17 +256,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/foodscan/settings.py</url>
-          <line>151</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/foodscan$views.coverage" NAME="views Coverage Results" MODIFIED="1570895243974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foodshow" />

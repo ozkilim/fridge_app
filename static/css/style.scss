@@ -490,7 +490,7 @@ font-family: black-burger;
     position: relative;
 
   top: 0px;
-  left: 100px;
+  left: 135px;
 }
 
 .passwordtag{
@@ -498,7 +498,13 @@ font-family: black-burger;
     position: relative;
 
   top: 0px;
-  left: 100px;
+  left: 135px;
+}
+
+.notausertag{
+   position: relative;
+   top: 0px;
+  left: 110px;
 }
 
 .signup_username{
@@ -819,4 +825,14 @@ display: block;
 
 label{
     font-family: black-burger;
+}
+
+.confirmimage{
+  position: relative;
+  left: 260px;
+}
+
+.signupbuttondiv{
+    position: relative;
+  left: 45px;
 }

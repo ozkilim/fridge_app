@@ -36,8 +36,6 @@ def signup(request):
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             user = form.save(commit=False)
-            print(user)
-            # passwrd check here.... how is the page rendering password areas if its not in the form..
             user.is_patient = True
             user.is_active = False
             user.save()
@@ -56,8 +54,8 @@ def signup(request):
             )
             email.send()
 
-            return HttpResponse(
-                'Please confirm your email address to complete the registration')  # should redirect to dead end page until user confirms email
+            return render(request, 'confirm.html'
+                )  # should redirect to dead end page until user confirms email
     form = CustomUserCreationForm()
     return render(request, 'signup.html', {'form': form})
 
