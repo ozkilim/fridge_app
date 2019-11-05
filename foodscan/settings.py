@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'l5p!e*r1n!tr6p0le0)n0xe0wf9y9e
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 
-ALLOWED_HOSTS = ['foodscan.herokuapp.com']
+ALLOWED_HOSTS = ['foodscanapp.herokuapp.com']
 
 # Application definition
 
