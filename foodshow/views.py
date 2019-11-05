@@ -27,9 +27,6 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 def landing(request):
     return render(request, 'landing.html')
 
-
-
-
 @login_exempt
 def signup(request):
     if request.method == 'POST':
@@ -77,7 +74,7 @@ def activate(request, uidb64, token):
         return HttpResponse('Activation link is invalid!')
 # the list will come in from the cam module...
 
-def fridge_filler(response, extracted_text):
+def fridge_filler(request, extracted_text):
     # however it splits assuming perfect spacing.... more work needed here to clean real data...
     print(extracted_text)
     shopping_list = re.sub("[^\w]", " ", extracted_text.lower()).split()
@@ -91,7 +88,7 @@ def fridge_filler(response, extracted_text):
     print(food_id_list)
     # still this function is adding it the list two times ...
     for i in food_id_list:
-        food = Fridge(used=False, fooddata_id=i)
+        food = Fridge(used=False, fooddata_id=i, user_id=request.user.id)
         food.save()
 
     return redirect('foodshow:index')

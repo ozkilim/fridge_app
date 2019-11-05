@@ -34,5 +34,8 @@ class Fridge(models.Model):
     fooddata = models.ForeignKey(FoodData, on_delete=models.CASCADE)
     date_scanned = models.DateTimeField(auto_now_add=True)
     used = models.BooleanField(default=False)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+
+
 
 
