@@ -2,7 +2,6 @@ from django.http import StreamingHttpResponse, request, response
 from django.urls import path, include
 from django.conf.urls import url
 from django.contrib.auth import views as auth_views
-from foodshow.views import gen, VideoCamera
 
 from . import views
 
@@ -23,9 +22,7 @@ urlpatterns = [
     path('fridge_manager', views.fridge_manager, name='fridge_manager'),
     path('fridge_filler/<extracted_text>', views.fridge_filler, name='fridge_filler'),
     path('upload_page', views.upload_page, name='upload_page'),
-    url('monitor/', lambda r: StreamingHttpResponse(gen(VideoCamera()),
-                                                    content_type='multipart/x-mixed-replace; boundary=frame' ),
-        name='monitor'),
+
 
     path('fullfoodshow', views.fullfoodshow, name='fullfoodshow'),
     path('pushsettings', views.pushsettings, name='pushsettings'),
