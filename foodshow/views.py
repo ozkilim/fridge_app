@@ -97,7 +97,7 @@ def fridge_filler(request, extracted_text):
 
 
 def index(request):
-    fridge_foods = Fridge.objects.all()
+    fridge_foods = Fridge.objects.filter(user_id=request.user)
     food_list = []
     if request.method == 'POST':
         eaten_food = request.POST.get('submit')
@@ -136,7 +136,7 @@ def index(request):
 
 
 def sort_by_catagory(request):
-    fridge_foods = Fridge.objects.all()
+    fridge_foods = Fridge.objects.filter(user_id=request.user)
     food_list = []
     if request.method == 'POST':
         eaten_food = request.POST.get('submit')
@@ -191,8 +191,6 @@ def upload_page(request):
                 # call the OCR function on it
             extracted_text = ocr_core(file)
 
-            print(str(extracted_text))
-            print("here is the food!")
                 # extract the text and display it
                 # then make user say yes or no.../correct the text...?
                 # text correction/edits could take place here
@@ -216,7 +214,7 @@ def eaten(request):
         elif 'delete_foods' in request.POST:
             Fridge.objects.filter(used=True).delete()
 
-    fridge_foods = Fridge.objects.all()
+    fridge_foods = Fridge.objects.filter(user_id=request.user)
     eaten_foods = []
     for one_food in fridge_foods:
         get_food_id = int(one_food.fooddata_id)

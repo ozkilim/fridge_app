@@ -11,4 +11,8 @@ pillow==5.4.1
 pytesseract==0.2.6
 werkzeug==0.15.3
 
-
+dj-database-url==0.4.2
+gunicorn==19.7.1
+psycopg2==2.7.3.2
+pytz==2017.3
+whitenoise==3.3.1
