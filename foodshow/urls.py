@@ -1,11 +1,7 @@
 from django.http import StreamingHttpResponse, request, response
-from django.urls import path
-from urllib3.util import url
-from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from django.conf.urls import url
 from django.contrib.auth import views as auth_views
-from django.views.generic import TemplateView
 from foodshow.views import gen, VideoCamera
 
 from . import views
