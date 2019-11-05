@@ -17,7 +17,6 @@ from foodshow.forms import CustomUserCreationForm, CustomFoodsForm, CustomFridge
 from foodshow.models import Fridge, FoodData, CustomUser
 from foodshow.ocr_core import ocr_core
 from foodshow.tokens import account_activation_token
-from pyzbar import pyzbar
 
 UPLOAD_FOLDER = '/static/uploads/'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
