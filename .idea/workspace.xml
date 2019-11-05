@@ -2,67 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/django_env/bin/less2scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/bin/pyscss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss-2.0.2.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss-2.0.2.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss-2.0.2.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss-2.0.2.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss-2.0.2.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss-2.0.2.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss/compiler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss/compressor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss/extension/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss/extension/django.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/django_pyscss/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/pyScss-1.3.5.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/pyScss-1.3.5.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/pyScss-1.3.5.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/pyScss-1.3.5.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/pyScss-1.3.5.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/pyScss-1.3.5.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/pyScss-1.3.5.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/ast.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/calculator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/compiler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/cssdefs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/errors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/bootstrap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/compass/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/compass/configuration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/compass/gradients.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/compass/helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/compass/images.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/compass/layouts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/compass/sprites.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/extra.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/extension/fonts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/grammar/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/grammar/_scanner.cpython-36m-darwin.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/grammar/expression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/grammar/scanner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/importer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/legacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/less2scss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/namespace.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/rule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/scss_meta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/selector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/source.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/sourcemap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/tool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_env/lib/python3.6/site-packages/scss/util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodscan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodscan/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -230,7 +171,8 @@
       <workItem from="1572972473368" duration="1507000" />
       <workItem from="1572974527672" duration="1568000" />
       <workItem from="1572976575152" duration="1637000" />
-      <workItem from="1572978439284" duration="227000" />
+      <workItem from="1572978439284" duration="1215000" />
+      <workItem from="1572982582113" duration="15000" />
     </task>
     <servers />
   </component>
