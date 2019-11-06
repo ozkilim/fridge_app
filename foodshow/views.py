@@ -11,7 +11,7 @@ from django.shortcuts import render, redirect
 from django.template.loader import render_to_string
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-from pytesseract import pytesseract
+import pytesseract
 
 from foodscan.middleware.login_exempt import login_exempt
 from foodshow.forms import CustomUserCreationForm, CustomFoodsForm, CustomFridgeFoodsForm, ShoppingForm
@@ -20,8 +20,6 @@ from foodshow.ocr_core import ocr_core
 from foodshow.tokens import account_activation_token
 
 
-pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files (x86)/Tesseract-OCR/tesseract'
-TESSDATA_PREFIX = 'C:/Program Files (x86)/Tesseract-OCR'
 
 
 UPLOAD_FOLDER = '/static/uploads/'
