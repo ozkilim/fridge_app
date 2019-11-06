@@ -304,7 +304,10 @@ def fridge_manager(request):
             context = json.load(json_file)
         food_added_list = context["food_added_list"]
         if form.is_valid():
-            x = form.save()
+            obj = form.save(commit=False)
+            obj.user_id = request.user.id
+            obj.save()
+            x = form.save(commit=False)
             foodid =x.fooddata_id
             thisfood = FoodData.objects.get(id=foodid).food_name
             food_added_list.append(thisfood)
