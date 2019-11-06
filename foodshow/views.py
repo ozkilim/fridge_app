@@ -1,9 +1,12 @@
 import datetime
 import re
 import json
+from pyexpat.errors import messages
+
 import pytz
 from django.contrib.auth import login
 from django.contrib.auth.models import User
+from django.contrib.postgres import serializers
 from django.contrib.sites.shortcuts import get_current_site
 from django.core.mail import EmailMessage
 from django.http import HttpResponse, request
@@ -52,10 +55,10 @@ def signup(request):
                 mail_subject, message, to=[to_email]
             )
             email.send()
-
             return render(request, 'confirm.html'
                 )  # should redirect to dead end page until user confirms email
-    form = CustomUserCreationForm()
+    else:
+        form = CustomUserCreationForm()
     return render(request, 'signup.html', {'form': form})
 
 
