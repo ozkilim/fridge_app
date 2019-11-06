@@ -7,7 +7,7 @@ from . import views
 
 app_name = 'foodshow'
 urlpatterns = [
-    path('landing', views.landing, name='landing'),
+    path('how-it-works', views.landing, name='landing'),
     path('', views.index, name='index'),
     path('sort_by_catagory', views.sort_by_catagory, name='sort_by_catagory'),
 
