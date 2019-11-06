@@ -1,1 +1,1 @@
-{"food_added_list": ["ozzycake", "cakey", "ozzycake"]}
+{"food_added_list": []}

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="" />
+    <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.5598dff83c2a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.b69d25229451.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.db8cb16edf8d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.f22330cbaa50.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customfoods.txt" beforeDir="false" afterPath="$PROJECT_DIR$/customfoods.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +186,9 @@
       <workItem from="1573033203529" duration="1197000" />
       <workItem from="1573043756188" duration="1684000" />
       <workItem from="1573045578342" duration="1716000" />
-      <workItem from="1573047403067" duration="1101000" />
+      <workItem from="1573047403067" duration="1649000" />
+      <workItem from="1573049240160" duration="1063000" />
+      <workItem from="1573052410481" duration="1629000" />
     </task>
     <servers />
   </component>

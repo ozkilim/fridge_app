@@ -128,15 +128,33 @@ def index(request):
                 one_food.delete()
                 # small cleaner code for any over due food to not clog up fridge database... this info may want to be kept for data analysis later down the line..
             if days_left == 0:
-                days_left = "Today"
+                days_left = "Eatme Today"
             elif days_left == 1:
-                days_left = "Tomorrow"
+                days_left = "Eat Tomorrow"
+            elif days_left == 2:
+                days_left = "2 days left to eat"
+            elif days_left == 3:
+                days_left = "3 days left to eat"
+            elif days_left == 4:
+                days_left = "4 days left to eat"
+            elif days_left == 5:
+                days_left = "5 days left to eat"
+            elif days_left == 6:
+                days_left = "6 days left to eat"
+            elif days_left == 7:
+                days_left = "7 days left to eat"
+            elif days_left == 8:
+                days_left = "8 days left to eat"
+            elif days_left >= 9:
+                days_left = "Over 8 days left to eat"
+
+
             fridge_food_id = one_food.id
 
             food_list.append({"foodname": foodname, "scanneddate": scanneddate, "days_left": days_left,
                               "fridge_food_id": fridge_food_id, "food_image": food_image})
 
-    day_list = ["Today", "Tomorrow", 2, 3, 4, 5, 6, 7, 8, "over 8 days"]
+    day_list = ["Eatme Today", "Eat Tomorrow", "2 days left to eat", "3 days left to eat", "4 days left to eat", "5 days left to eat", "6 days left to eat", "7 days left to eat", "8 days left to eat", "Over 8 days left to eat"]
     return render(request, "index.html", {"food_list": food_list, "day_list": day_list})
 
 
