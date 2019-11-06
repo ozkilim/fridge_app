@@ -1,0 +1,850 @@
+/* line 4, static/css/style.scss */
+.pushme {
+  position: relative;
+  font-weight: 700;
+  background-color: #384D9D;
+  border-radius: 0.6em;
+  display: inline-block;
+  margin: 0em; }
+  /* line 11, static/css/style.scss */
+  .pushme .inner {
+    display: inline-block;
+    background-color: #F6F3EB;
+    border-radius: 0.6em;
+    border: 0.3em solid #384D9D;
+    padding: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    user-select: none;
+    transform: translate3d(0.6em, -0.6em, 0);
+    transition: transform 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 220ms; }
+  /* line 25, static/css/style.scss */
+  .pushme:active .inner, .pushme.click .inner {
+    transform: translate3d(0, 0, 0);
+    transition: transform 120ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 35, static/css/style.scss */
+.uploadpushme {
+  position: relative;
+  font-weight: 700;
+  background-color: #384D9D;
+  text-align: center;
+  border-radius: 0.6em;
+  display: inline-block;
+  margin: 0em; }
+  /* line 43, static/css/style.scss */
+  .uploadpushme .uploadinner {
+    display: inline-block;
+    background-color: #F6F3EB;
+    border-radius: 0.6em;
+    border: 0.3em solid #384D9D;
+    padding: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    user-select: none;
+    transform: translate3d(0.6em, -0.6em, 0);
+    transition: transform 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 220ms; }
+  /* line 57, static/css/style.scss */
+  .uploadpushme:active .uploadinner, .uploadpushme.click .uploadinner {
+    transform: translate3d(0, 0, 0);
+    transition: transform 120ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 66, static/css/style.scss */
+body {
+  background: #F6F3EB !important;
+  font-family: black-burger !important;
+  color: #384D9D !important;
+  font-size: 5vh; }
+
+/* line 73, static/css/style.scss */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  text-align: center;
+  transform: translate3d(-50%, -50%, 0); }
+
+/* line 82, static/css/style.scss */
+.sig {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.4); }
+
+/* line 93, static/css/style.scss */
+.button {
+  position: absolute;
+  left: 7%; }
+
+/* line 98, static/css/style.scss */
+.uploadpagebutton {
+  float: left; }
+
+/* line 103, static/css/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 108, static/css/style.scss */
+body {
+  height: 100vh;
+  position: relative; }
+
+/* line 112, static/css/style.scss */
+.ocrloader {
+  width: 200px;
+  height: 120px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden; }
+  /* line 120, static/css/style.scss */
+  .ocrloader span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(45, 183, 183, 0.54);
+    z-index: 1;
+    transform: translateY(135%);
+    animation: move 1s cubic-bezier(0.15, 0.44, 0.76, 0.64);
+    animation-iteration-count: infinite; }
+  /* line 132, static/css/style.scss */
+  .ocrloader > div {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 48%;
+    backface-visibility: hidden; }
+  /* line 141, static/css/style.scss */
+  .ocrloader i {
+    display: block;
+    height: 1px;
+    background: #000;
+    margin: 0 auto 2px;
+    margin: 0 auto 2.2px;
+    backface-visibility: hidden; }
+    /* line 148, static/css/style.scss */
+    .ocrloader i:nth-child(2) {
+      width: 75%; }
+    /* line 149, static/css/style.scss */
+    .ocrloader i:nth-child(3) {
+      width: 81%; }
+    /* line 150, static/css/style.scss */
+    .ocrloader i:nth-child(4) {
+      width: 87%; }
+    /* line 151, static/css/style.scss */
+    .ocrloader i:nth-child(6) {
+      width: 71%; }
+    /* line 152, static/css/style.scss */
+    .ocrloader i:nth-child(7) {
+      width: 81%; }
+    /* line 153, static/css/style.scss */
+    .ocrloader i:nth-child(8) {
+      width: 65%; }
+    /* line 154, static/css/style.scss */
+    .ocrloader i:nth-child(9) {
+      width: 83%; }
+    /* line 155, static/css/style.scss */
+    .ocrloader i:nth-child(10) {
+      width: 75%; }
+    /* line 156, static/css/style.scss */
+    .ocrloader i:nth-child(12) {
+      width: 86%; }
+    /* line 157, static/css/style.scss */
+    .ocrloader i:nth-child(14) {
+      width: 65%; }
+    /* line 158, static/css/style.scss */
+    .ocrloader i:nth-child(16) {
+      width: 75%; }
+    /* line 159, static/css/style.scss */
+    .ocrloader i:nth-child(18) {
+      width: 83%; }
+  /* line 161, static/css/style.scss */
+  .ocrloader:before, .ocrloader:after, .ocrloader em:after, .ocrloader em:before {
+    border-color: #000;
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 16px;
+    border-style: solid;
+    border-width: 0px; }
+  /* line 170, static/css/style.scss */
+  .ocrloader:before {
+    left: 0;
+    top: 0;
+    border-left-width: 1px;
+    border-top-width: 1px; }
+  /* line 176, static/css/style.scss */
+  .ocrloader:after {
+    right: 0;
+    top: 0;
+    border-right-width: 1px;
+    border-top-width: 1px; }
+  /* line 182, static/css/style.scss */
+  .ocrloader em:before {
+    left: 0;
+    bottom: 0;
+    border-left-width: 1px;
+    border-bottom-width: 1px; }
+  /* line 188, static/css/style.scss */
+  .ocrloader em:after {
+    right: 0;
+    bottom: 0;
+    border-right-width: 1px;
+    border-bottom-width: 1px; }
+
+@keyframes move {
+  0%, 100% {
+    transform: translateY(490%); }
+  50% {
+    transform: translateY(0%); }
+  75% {
+    transform: translateY(272%); } }
+
+/* line 202, static/css/style.scss */
+a {
+  color: #384D9D; }
+
+/* line 207, static/css/style.scss */
+.card {
+  background: #F6F3EB !important;
+  border-radius: 0.6em;
+  border: 0.1em solid #384D9D;
+  text-align: center; }
+
+/* line 213, static/css/style.scss */
+.btn {
+  color: #384D9D;
+  font-weight: bold; }
+
+/* line 217, static/css/style.scss */
+.card-body {
+  font-size: 15px; }
+
+/* line 221, static/css/style.scss */
+.eatencentral {
+  text-align: center; }
+
+/* line 225, static/css/style.scss */
+.card-headerEatme {
+  background: limegreen; }
+
+/* line 228, static/css/style.scss */
+.card-headerEat {
+  background: fuchsia; }
+
+/* line 231, static/css/style.scss */
+.card-header2 {
+  background: cornflowerblue; }
+
+/* line 234, static/css/style.scss */
+.card-header3 {
+  background: lightpink; }
+
+/* line 237, static/css/style.scss */
+.card-header4 {
+  background: deepskyblue; }
+
+/* line 240, static/css/style.scss */
+.card-header5 {
+  background: salmon; }
+
+/* line 243, static/css/style.scss */
+.card-header6 {
+  background: thistle; }
+
+/* line 246, static/css/style.scss */
+.card-header7 {
+  background: lightpink; }
+
+/* line 249, static/css/style.scss */
+.card-header8 {
+  background: peru; }
+
+/* line 252, static/css/style.scss */
+.card-headerOver {
+  background: snow; }
+
+/* line 257, static/css/style.scss */
+.eatbutton {
+  visibility: hidden; }
+
+/* line 261, static/css/style.scss */
+.showingeatbutton {
+  font-weight: 700;
+  background-color: #F6F3EB;
+  text-transform: uppercase;
+  padding: 20px;
+  border: 4px solid #384D9D !important;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.3s ease 0s; }
+
+/* line 275, static/css/style.scss */
+.showingeatbutton:hover {
+  color: #494949 !important;
+  border-radius: 50px;
+  border-color: #494949 !important;
+  transition: all 0.3s ease 0s; }
+
+/* Once the browser targets #eat, the animation is triggered */
+/* line 286, static/css/style.scss */
+#eat:target {
+  animation: play 0.4s steps(10) infinite; }
+
+/* line 290, static/css/style.scss */
+.monster {
+  width: 190px;
+  height: 240px;
+  margin: 40px auto;
+  background: url("https://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/blog/monster.png") left center; }
+
+@keyframes play {
+  100% {
+    background-position: -1900px; } }
+
+/* line 301, static/css/style.scss */
+.foodicon {
+  width: 35px;
+  height: 35px; }
+
+/* line 308, static/css/style.scss */
+.upload {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.075);
+  font-size: 30px;
+  background-image: linear-gradient(to bottom, #b6c5cc 50%, #c0e8b9 50%);
+  background-position: 0% 0%;
+  background-size: 230%;
+  background-color: #b6c5cc;
+  background-repeat: no-repeat;
+  border: 6px solid #fff;
+  border-radius: 50px;
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.1), 0 3px 0 rgba(0, 0, 0, 0.075);
+  cursor: pointer;
+  height: 80px;
+  left: 50%;
+  margin: -43px;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  transition: background 3s ease-in-out; }
+
+/* line 334, static/css/style.scss */
+.uploading {
+  background-position: 0% 100%; }
+
+/* line 338, static/css/style.scss */
+span1 {
+  margin-top: 16px;
+  margin-left: -3px;
+  transition: 0.1s 2s ease-in-out; }
+
+/* line 344, static/css/style.scss */
+.ok {
+  position: absolute;
+  left: 22px;
+  top: 50px;
+  opacity: 0; }
+
+/* line 351, static/css/style.scss */
+.bounce {
+  animation: bounce 0.3s ease 2.5s forwards; }
+
+/* line 355, static/css/style.scss */
+.arrow-out {
+  top: -20px;
+  visibility: hidden; }
+
+/* line 360, static/css/style.scss */
+.upload_button {
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.075);
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #888;
+  cursor: pointer;
+  transition: 0.2s; }
+  /* line 379, static/css/style.scss */
+  .upload_button:active {
+    box-shadow: 0 0 0;
+    margin-top: 12px; }
+
+@keyframes bounce {
+  0% {
+    top: 50px;
+    opacity: 0; }
+  80% {
+    top: -5px; }
+  100% {
+    top: 0;
+    opacity: 1; } }
+
+/* line 401, static/css/style.scss */
+.login_button {
+  border: 10px;
+  border-radius: 10px;
+  background-color: #384D9D;
+  color: #F6F3EB;
+  width: 425px;
+  font-weight: 500; }
+
+/* line 410, static/css/style.scss */
+.login_button:hover {
+  background-color: #F6F3EB;
+  color: #384D9D;
+  font-weight: 800; }
+
+/* line 416, static/css/style.scss */
+.signup_button {
+  position: relative;
+  top: 30px;
+  border: 10px;
+  border-radius: 10px;
+  background-color: #384D9D;
+  color: #F6F3EB;
+  width: 425px;
+  font-weight: 500; }
+
+/* line 427, static/css/style.scss */
+.signup_button:hover {
+  background-color: #F6F3EB;
+  color: #384D9D;
+  font-weight: 800; }
+
+/* line 434, static/css/style.scss */
+.customfoodaddbutton {
+  position: relative;
+  top: 30px;
+  border: 10px;
+  border-radius: 10px;
+  background-color: #384D9D;
+  color: #F6F3EB;
+  width: 425px;
+  font-weight: 500; }
+
+/* line 444, static/css/style.scss */
+.customfoodaddbutton:hover {
+  background-color: #F6F3EB;
+  color: #384D9D;
+  font-weight: 800; }
+
+/* line 450, static/css/style.scss */
+.customfoodsheader {
+  font-family: black-burger;
+  color: #384D9D; }
+
+/* line 459, static/css/style.scss */
+.delete_foods {
+  visibility: hidden; }
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("/static/font/webfont.ttf?c870b9567f6e") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'black-burger';
+  src: url("/static/font/black-burger/black-burger.ttf?90ddd5f65256") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'noot';
+  src: url("/static/font/Noot.ttf?3d7022e24cd9") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* line 485, static/css/style.scss */
+.password-control-login {
+  font-family: MyWebFOnt;
+  width: 425px; }
+
+/* line 490, static/css/style.scss */
+.username-control-login {
+  width: 425px;
+  font-family: black-burger; }
+
+/* line 495, static/css/style.scss */
+.usernametag {
+  font-family: black-burger;
+  position: relative;
+  top: 0px;
+  left: 135px; }
+
+/* line 503, static/css/style.scss */
+.passwordtag {
+  font-family: black-burger;
+  position: relative;
+  top: 0px;
+  left: 135px; }
+
+/* line 511, static/css/style.scss */
+.notausertag {
+  position: relative;
+  top: 0px;
+  left: 110px; }
+
+/* line 517, static/css/style.scss */
+.signup_username {
+  font-family: black-burger; }
+
+/* line 520, static/css/style.scss */
+.signup_email {
+  font-family: black-burger; }
+
+/* line 524, static/css/style.scss */
+.signup_password1 {
+  font-family: MyWebFOnt; }
+
+/* line 528, static/css/style.scss */
+.signup_password2 {
+  font-family: MyWebFOnt; }
+
+/* line 533, static/css/style.scss */
+.nav-logout-button {
+  position: relative;
+  top: 0px;
+  left: 100px;
+  border: 10px;
+  border-radius: 10px;
+  background-color: #384D9D;
+  color: #F6F3EB;
+  width: 425px;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: black-burger; }
+
+/* line 546, static/css/style.scss */
+.nav-logout-button:hover {
+  background-color: #F6F3EB;
+  text-decoration: none;
+  color: #384D9D;
+  font-weight: 800; }
+
+/* line 554, static/css/style.scss */
+li {
+  display: inline; }
+
+/* line 558, static/css/style.scss */
+.clear-custom-foods-added {
+  visibility: hidden; }
+
+/* line 562, static/css/style.scss */
+.hideeatenid {
+  visibility: hidden; }
+
+/* line 565, static/css/style.scss */
+.foodnameinfridge {
+  font-family: black-burger; }
+
+/* line 569, static/css/style.scss */
+.fridgeitemcontainer {
+  border: 2px;
+  border-style: solid;
+  border-color: #384D9D;
+  border-radius: 10px;
+  padding-bottom: 4px;
+  padding-top: 4px; }
+
+/* line 579, static/css/style.scss */
+.username-control-login {
+  border-radius: 10px; }
+
+/* line 584, static/css/style.scss */
+.password-control-login {
+  border-radius: 10px; }
+
+/* line 588, static/css/style.scss */
+.signup_username {
+  border-radius: 10px;
+  width: 425px; }
+
+/* line 592, static/css/style.scss */
+.signup_email {
+  border-radius: 10px;
+  width: 425px; }
+
+/* line 597, static/css/style.scss */
+.signup_password1 {
+  border-radius: 10px;
+  width: 425px;
+  font-family: MyWebFont; }
+
+/* line 603, static/css/style.scss */
+.signup_password2 {
+  border-radius: 10px;
+  width: 425px; }
+
+/* line 608, static/css/style.scss */
+.uploadtitlte {
+  font-family: black-burger; }
+
+/* line 611, static/css/style.scss */
+.chosefilebuttons {
+  position: relative;
+  top: 30px;
+  border: 10px;
+  border-radius: 10px;
+  background-color: #384D9D;
+  color: #F6F3EB;
+  width: 600px;
+  font-weight: 500; }
+
+/* line 623, static/css/style.scss */
+.chosefilebuttons:hover {
+  background-color: #F6F3EB;
+  color: #384D9D;
+  font-weight: 800; }
+
+/* line 629, static/css/style.scss */
+.hiddenuploadbutton {
+  visibility: hidden; }
+
+/* line 637, static/css/style.scss */
+.fulluploadcontainer {
+  position: relative;
+  right: 50px; }
+
+/* line 642, static/css/style.scss */
+.signupform {
+  font-family: black-burger; }
+
+/* line 645, static/css/style.scss */
+.signupformtitle {
+  font-family: black-burger; }
+
+/* line 649, static/css/style.scss */
+#id_food_category {
+  width: 150px; }
+
+/* line 653, static/css/style.scss */
+.customfooderror {
+  color: crimson;
+  font-family: black-burger; }
+
+/* line 662, static/css/style.scss */
+#id_fooddata {
+  width: 425px; }
+
+/* line 666, static/css/style.scss */
+.card-headermeat {
+  background: limegreen; }
+
+/* line 669, static/css/style.scss */
+.card-headervegetable {
+  background: fuchsia; }
+
+/* line 672, static/css/style.scss */
+.card-headerfish {
+  background: cornflowerblue; }
+
+/* line 675, static/css/style.scss */
+.card-headerdairy {
+  background: lightpink; }
+
+/* line 678, static/css/style.scss */
+.card-headergrain {
+  background: deepskyblue; }
+
+/* line 681, static/css/style.scss */
+.card-headerother {
+  background: salmon; }
+
+/* line 684, static/css/style.scss */
+.card-headerfruit {
+  background: thistle; }
+
+/* line 688, static/css/style.scss */
+.openfridgebutton {
+  position: relative;
+  left: 270px; }
+
+/* line 693, static/css/style.scss */
+.confirmformbuttonyes {
+  position: relative;
+  top: 30px;
+  border: 10px;
+  border-radius: 10px;
+  background-color: #384D9D;
+  color: #F6F3EB;
+  width: 600px;
+  font-weight: 500; }
+
+/* line 703, static/css/style.scss */
+.confirmformbuttonyes:hover {
+  background-color: #F6F3EB;
+  text-decoration: none;
+  color: #384D9D;
+  font-weight: 800; }
+
+/* line 711, static/css/style.scss */
+.confirmformbuttonno {
+  position: relative;
+  top: 30px;
+  border: 10px;
+  border-radius: 10px;
+  background-color: #384D9D;
+  color: #F6F3EB;
+  width: 600px;
+  font-weight: 500; }
+
+/* line 721, static/css/style.scss */
+.confirmformbuttonno:hover {
+  background-color: #F6F3EB;
+  text-decoration: none;
+  color: #384D9D;
+  font-weight: 800; }
+
+/* The switch - the box around the slider */
+/* line 730, static/css/style.scss */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+
+/* Hide default HTML checkbox */
+/* line 738, static/css/style.scss */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+/* The slider */
+/* line 745, static/css/style.scss */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+/* line 757, static/css/style.scss */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+/* line 769, static/css/style.scss */
+input:checked + .slider {
+  background-color: #384D9D; }
+
+/* line 773, static/css/style.scss */
+input:focus + .slider {
+  box-shadow: 0 0 1px #384D9D; }
+
+/* line 777, static/css/style.scss */
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+/* Rounded sliders */
+/* line 784, static/css/style.scss */
+.slider.round {
+  border-radius: 34px; }
+
+/* line 788, static/css/style.scss */
+.slider.round:before {
+  border-radius: 50%; }
+
+/* line 792, static/css/style.scss */
+.col-centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+/* line 799, static/css/style.scss */
+.clear_shopping_list {
+  visibility: hidden; }
+
+/* line 803, static/css/style.scss */
+.howitworks {
+  font-family: black-burger;
+  position: relative;
+  left: 280px;
+  color: #de3e44; }
+
+/* line 810, static/css/style.scss */
+.signuponlandingdiv {
+  position: relative;
+  left: 210px;
+  font-family: black-burger; }
+
+/* line 816, static/css/style.scss */
+.shoppinglistitem {
+  background-color: #384D9D;
+  border-radius: 5px;
+  color: #F6F3EB;
+  font-family: black-burger; }
+
+/* line 822, static/css/style.scss */
+.shoppinglistitem:hover {
+  color: #384D9D;
+  background-color: #F6F3EB; }
+
+/* line 828, static/css/style.scss */
+#id_foods {
+  font-family: black-burger; }
+
+/* line 833, static/css/style.scss */
+label {
+  font-family: black-burger; }
+
+/* line 837, static/css/style.scss */
+.confirmimage {
+  position: relative;
+  left: 260px; }
+
+/* line 842, static/css/style.scss */
+.signupbuttondiv {
+  position: relative;
+  left: 45px; }
+
+/* line 847, static/css/style.scss */
+.errorlist {
+  display: none; }
+
+/* line 851, static/css/style.scss */
+.fridgflipatlogin {
+  position: relative;
+  right: 300px;
+  bottom: 30px; }

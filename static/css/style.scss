@@ -475,6 +475,13 @@ span1{
   font-weight: normal;
 }
 
+@font-face{
+  font-family: 'noot';
+  src: url('../font/Noot.ttf')  format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
 .password-control-login{
     font-family: MyWebFOnt;
   width: 425px;
