@@ -48,7 +48,10 @@
 <div class="login">
     <div class="container">
         <div class="row">
-            <div class="col-4"></div>
+            <div class="col-4">
+                 <img src={% static 'food_icons/FridgeFlip.png' %} class='fridgflipatlogin'>
+
+            </div>
             <div class="col-4">
 
                 <form role="form" class="form-horizontal" method="post"
@@ -71,18 +74,24 @@
                     </div>
                 </form>
 
+                <br>
+                 {% if form.errors %}
+                      <div class="alert alert-danger">
+                            <strong>username or password not correct</strong>
+                        </div>
+                {% endif %}
 
                 <br>
                 <h2 class="notausertag">Not a user?</h2>
                 <br>
-            <div class="signupbuttondiv">
-                <div class="button">
-                    <div>
-                        <a class="center"><a href="{% url 'foodshow:signup' %}" class="pushme"> <span
-                                class="inner"> sign up here</span></a>
-                        </a>
+                <div class="signupbuttondiv">
+                    <div class="button">
+                        <div>
+                            <a class="center"><a href="{% url 'foodshow:signup' %}" class="pushme"> <span
+                                    class="inner"> sign up here</span></a>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
                 </div>
             </div>
