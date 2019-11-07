@@ -47,7 +47,7 @@
     <ul>
     <li><a href="{% url 'foodshow:index' %}" class="nav-logout-button">Timefridge <img src="media/food_icons/time.png" class="foodicon"></a></li>
     <li><a href="{% url 'foodshow:sort_by_catagory' %}" class="nav-logout-button">category fridge  <img src="media/food_icons/fridge.svg" class="foodicon"></a></li>
-    <li><a href="" class="nav-logout-button">Scan foods  <img src="media/food_icons/scan.png" class="foodicon"></a></li>
+    <li><a href="{% url 'foodshow:scan_in_progress' %}" class="nav-logout-button">Scan foods  <img src="media/food_icons/scan.png" class="foodicon"></a></li>
         <li><a href="{% url 'foodshow:shopping' %}" class="nav-logout-button">Shopping list<img src="media/food_icons/shopping.png" class="foodicon"></a></li>
 
     <li><a href="{% url 'foodshow:upload_page' %}" class="nav-logout-button">Upload recipts <img src="media/food_icons/recipt.png" class="foodicon"></a></li>

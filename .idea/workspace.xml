@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.09af8f0d2990.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.26e324e01cfb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.44a87053577e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.7a82699020a1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.80d8d24b3e04.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.8f51dd6d6528.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.a4b60732e57b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.cc3c46d40929.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/scan_in_progress.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodshow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +189,8 @@
       <workItem from="1573111396169" duration="1631000" />
       <workItem from="1573113354483" duration="561000" />
       <workItem from="1573116220683" duration="1653000" />
-      <workItem from="1573118343707" duration="839000" />
+      <workItem from="1573118343707" duration="905000" />
+      <workItem from="1573120234725" duration="344000" />
     </task>
     <servers />
   </component>

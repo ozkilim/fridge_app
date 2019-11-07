@@ -30,6 +30,8 @@ urlpatterns = [
     url('^', include('django.contrib.auth.urls')),
     path('shopping', views.shopping, name='shopping'),
     path('seed', views.seed, name='seed'),
+    path('scan_in_progress', views.scan_in_progress, name='scan_in_progress'),
+
 
     # url(r'^password_reset/$', auth_views.password_reset, name='password_reset'),
     # url(r'^password_reset/done/$', auth_views.password_reset_done, name='password_reset_done'),

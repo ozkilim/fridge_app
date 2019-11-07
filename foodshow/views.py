@@ -455,3 +455,6 @@ def seed(request):
 
     seed_food_data(35)
     return HttpResponse('seeded')
+
+def scan_in_progress(request):
+    return render(request, "scan_in_progress.html")
