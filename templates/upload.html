@@ -11,7 +11,9 @@
             </div>
             <div class="col-8">
                 {% if msg %}
-                    <h1>{{ msg }}</h1>
+                      <div class="alert alert-danger">
+                            <strong>{{ msg }}</strong>
+                        </div>
                 {% endif %}
 
                 <h1 class="uploadtitlte">Upload new File</h1>
