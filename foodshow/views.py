@@ -148,7 +148,6 @@ def index(request):
             elif days_left >= 9:
                 days_left = "Over 8 days left to eat"
 
-
             fridge_food_id = one_food.id
 
             food_list.append({"foodname": foodname, "scanneddate": scanneddate, "days_left": days_left,
@@ -302,12 +301,12 @@ def custom_foods(request):
                     error = "This is not a custom food, add it from our data base of foods!"
                     return render(request, "custom_foods.html", {"error": error})
                     break
-            form.save()
-            print("saved")
+            obj = form.save(commit=False)
+            obj.user = request.user.id
+            obj.save()
             return render(request, "custom_foods.html")
     else:
         form = CustomFoodsForm()
-    # payment_to = scanner.camera()
     return render(request, "custom_foods.html", {"form": form})
 
 
@@ -320,7 +319,7 @@ def fridge_manager(request):
                 json.dump(data, outfile)
             return redirect("foodshow:index")
         # create a form instance and populate it with data from the request:
-        form = CustomFridgeFoodsForm(request.POST)
+        form = CustomFridgeFoodsForm(user=request.user, data =request.POST)
         with open('customfoods.txt') as json_file:
             context = json.load(json_file)
         food_added_list = context["food_added_list"]
@@ -340,7 +339,7 @@ def fridge_manager(request):
         with open('customfoods.txt') as json_file:
             context = json.load(json_file)
         passinlist = context["food_added_list"]
-        form = CustomFridgeFoodsForm()
+        form = CustomFridgeFoodsForm(user=request.user)
 
     return render(request, "fridge_manager.html", {"form": form, "passinlist":passinlist})
 

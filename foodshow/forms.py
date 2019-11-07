@@ -1,5 +1,7 @@
+
 from django import forms
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django.http import request
 
 from foodshow import models
 from .models import CustomUser, FoodData, Fridge
@@ -39,16 +41,23 @@ class CustomFoodsForm(forms.ModelForm):
 
 
 class CustomFridgeFoodsForm(forms.ModelForm):
-    fooddata = forms.ModelChoiceField(queryset=FoodData.objects.filter(image_of_food="general.svg")
+    fooddata = forms.ModelChoiceField(queryset=None
                                               ,label="Add a custom food to the fridge", empty_label="pick a custom food")
+
+    def __init__(self,user, *args, **kwargs):
+        super(CustomFridgeFoodsForm, self).__init__(*args, **kwargs)
+        self.fields['fooddata'].queryset = FoodData.objects.filter(user=user.id)
 
     class Meta:
         model = Fridge
         fields = ['fooddata']
 
 
+
+
+
 class ShoppingForm(forms.ModelForm):
-    foods = forms.ModelChoiceField(queryset=FoodData.objects.all()
+    foods = forms.ModelChoiceField(queryset=FoodData.objects.filter(user=0)
                                       ,label="Add a food to your shopping list", empty_label="pick a food")
     class Meta:
         model = FoodData

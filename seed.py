@@ -38,7 +38,7 @@ def seed_food_data(number):
         days_good_for = days_good_for_list[i]
         image_of_food = image_of_food_list[i]
         food_category = catagory_list[i]
-        food = FoodData(id=i+1, food_name=food_name, days_good_for=days_good_for, image_of_food=image_of_food, food_category = food_category)
+        food = FoodData(id=i+1, food_name=food_name, days_good_for=days_good_for, image_of_food=image_of_food, food_category = food_category, user=0)
         food.save()
 seed_food_data(35)
 print("seeded!")
