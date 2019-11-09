@@ -52,7 +52,7 @@
 {#        </div>#}
             <div class="col-12">
                 <br>
-            <div class = "openfridgebutton">
+            <div class = "openfridgebuttoncatagory">
                 <div class="button">
                     <a class="center"><a class="pushme"
                                          onclick="document.getElementById('primaryButton').click()"> <span
@@ -87,9 +87,11 @@
                                     {% for food in food_list %}
                                         {% if food.food_catagory == i %}
                                             <div class ="fridgeitemcontainer">
-                                                <div class ="foodnameinfridge">{{ food.foodname }}</div> when you bought it {{ food.scanneddate }}
-                                                    only {{ food.days_left }} days left to eat it
+                                                <div class="foodnameinfridge">{{ food.foodname }}</div>
+                                                <div class="whenyouboughtit">When you bought it:</div>
+                                                <div class="whenyouboughtitreasult">{{ food.scanneddate }}
                                                     <img src="media/food_icons/{{ food.food_image }}" class="foodicon">
+                                                </div>
 
                                                     <form action="{% url 'foodshow:sort_by_catagory' %}" method="post" name="submit">
                                                         {% csrf_token %}
@@ -97,7 +99,7 @@
                                                                value="{{ food.fridge_food_id }}" id="{{ food.fridge_food_id }}">
 
                                                     </form>
-                                                    <button for="eating" id="showingeatbutton"
+                                                    <button for="eating" class='showingeatbutton' id="showingeatbutton"
                                                                 class="showingeatbutton"
                                                                 onclick="document.getElementById({{ food.fridge_food_id }}).click()">Eat
                                                         </button>
