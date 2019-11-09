@@ -90,9 +90,9 @@
                                         {% if food.days_left == i %}
                                             <div class="fridgeitemcontainer">
                                                 <div class="foodnameinfridge">{{ food.foodname }}</div>
-                                                when you bought it {{ food.scanneddate }}
-                                                only {{ food.days_left }} days left to eat it
-                                                <img src="media/food_icons/{{ food.food_image }}" class="foodicon">
+                                                <div class="whenyouboughtit">When you bought it:</div>
+                                                <div class="whenyouboughtitreasult">{{ food.scanneddate }}
+                                                    <img src="media/food_icons/{{ food.food_image }}" class="foodicon"></div>
 
                                                 <form action="{% url 'foodshow:index' %}" method="post" name="submit">
                                                     {% csrf_token %}
@@ -101,7 +101,7 @@
                                                            id="{{ food.fridge_food_id }}">
 
                                                 </form>
-                                                <button for="eating" id="showingeatbutton"
+                                                <button for="eating" class='showingeatbutton' id="showingeatbutton"
                                                         class="showingeatbutton"
                                                         onclick="document.getElementById({{ food.fridge_food_id }}).click()">
                                                     Eat

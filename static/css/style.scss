@@ -564,6 +564,25 @@ li {
 }
 .foodnameinfridge{
           font-family: black-burger;
+    color: #5c913b;
+  font-size: 20px;
+}
+
+.whenyouboughtit{
+  position: relative;
+  right:100px;
+  color: #de3e44;
+}
+
+.showingeatbutton{
+  position: relative;
+  bottom:50px;
+}
+
+.whenyouboughtitreasult{
+    position: relative;
+  left:90px;
+  bottom: 30px;
 }
 
 .fridgeitemcontainer{
@@ -573,7 +592,7 @@ li {
   border-radius: 10px;
   padding-bottom: 4px;
   padding-top: 4px;
-
+  height:150px;
 }
 
 .username-control-login{
