@@ -19,3 +19,11 @@ button.addEventListener('click', function() {
     button.innerHTML = button.getAttribute("data-text-swap");
   }
 });
+
+// $('#idofthebutton').hover(function () {
+//     $('#idoftextbox').show();
+// }, function () {
+//     $('#idoftextbox').hide();
+// });
+
+

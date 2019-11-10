@@ -884,3 +884,105 @@ label{
   position: relative;
   left:200px;
 }
+
+
+#timefridgenavbox{
+  display: none;
+  font-size: 20px;
+}
+
+#timefridgenav:hover+#timefridgenavbox{
+  display: block;
+    position: absolute;
+   top: 60px;
+  left: 50px;
+}
+
+
+#categoryfridgenavbox{
+  display: none;
+  font-size: 20px;
+}
+
+#categoryfridgenav:hover+#categoryfridgenavbox{
+  display: block;
+    position: absolute;
+   top: 60px;
+  left: 50px;
+}
+
+
+#scan_in_progressnavbox{
+  display: none;
+  font-size: 20px;
+}
+
+#scan_in_progressnav:hover+#scan_in_progressnavbox{
+  display: block;
+    position: absolute;
+   top: 60px;
+  left: 50px;
+}
+
+
+#shoppingnavbox{
+  display: none;
+  font-size: 20px;
+}
+
+#shoppingnav:hover+#shoppingnavbox{
+  display: block;
+    position: absolute;
+   top: 60px;
+  left: 50px;
+}
+
+#upload_pagenavbox{
+  display: none;
+  font-size: 20px;
+}
+
+#upload_pagenav:hover+#upload_pagenavbox{
+  display: block;
+    position: absolute;
+   top: 60px;
+  left: 50px;
+}
+
+#eatennavbox{
+  display: none;
+  font-size: 20px;
+}
+
+#eatennav:hover+#eatennavbox{
+  display: block;
+    position: absolute;
+   top: 60px;
+  left: 50px;
+}
+
+
+#custom_foodsnavbox{
+  display: none;
+  font-size: 20px;
+}
+
+#custom_foodsnav:hover+#custom_foodsnavbox{
+  display: block;
+    position: absolute;
+   top: 60px;
+  left: 50px;
+}
+
+#fridge_managernavbox{
+  display: none;
+  font-size: 20px;
+}
+
+#fridge_managernav:hover+#fridge_managernavbox{
+  display: block;
+    position: absolute;
+   top: 60px;
+  left: 50px;
+}
+
