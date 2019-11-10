@@ -79,7 +79,7 @@
                 src="media/food_icons/manager.png" class="foodicon"></a>
             <div id="fridge_managernavbox">Add one of your custom foods to your fridge</div>
         </li>
-        <li><a href="{% url 'foodshow:logout' %}" class="nav-logout-button">Logout <img
+        <li><a href="{% url 'foodshow:logout' %}" class="nav-logout-button">Logout {{ request.user.username }}<img
                 src="media/food_icons/logout.png" class="foodicon"></a></li>
 
 
