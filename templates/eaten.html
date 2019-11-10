@@ -10,57 +10,49 @@
             </div>
             <div class="col-8 col-centered">
 
-                <h1 class ="font_test">
+                <h1 class="font_test">
                     Foods eaten!
                 </h1>
+                <h2>Simply click on a food to add it back to your fridge</h2>
                 {% for eaten_food in eaten_foods %}
 
-                        <form action="{% url 'foodshow:eaten' %}" method="post">
-                            {% csrf_token %}
-                            <button type="button" class="signup_button" onclick="document.getElementById({{ eaten_food.fridge_food_id }}).click()">
-                                <input type="Submit" name="submit" value={{ eaten_food.fridge_food_id }} id={{ eaten_food.fridge_food_id }} class="hideeatenid">
-                                <img src="media/food_icons/{{ eaten_food.food_image }}" class="foodicon">
-                                                        {{ eaten_food.foodname }} eaten on Was not eaten! Add back to fridge
+                    <form action="{% url 'foodshow:eaten' %}" method="post">
+                        {% csrf_token %}
+                        <button type="button" class="signup_button"
+                                onclick="document.getElementById({{ eaten_food.fridge_food_id }}).click()">
+                            <input type="Submit" name="submit"
+                                   value={{ eaten_food.fridge_food_id }} id={{ eaten_food.fridge_food_id }}
+                                   class="hideeatenid">
+                            <img src="media/food_icons/{{ eaten_food.food_image }}" class="foodicon">
+                            {{ eaten_food.foodname }}
 
 
+                        </button>
+                    </form>
 
-                            </button>
-                        </form>
                     <br>
-
 
 
                 {% endfor %}
                 <br>
 
 
-                <div class="button">
-                    <div>
-                        <a class="center"><a href="{% url 'foodshow:index' %}" class="pushme"> <span
-                                class="inner">back to the fridge</span></a>
+                <div class="deletefoodbutton">
+                    <div class="button">
+                        <a class="center"><a class="pushme"
+                                             onclick="document.getElementById('click').click()"> <span
+                                class="inner">delete foods</span></a>
+                        </a>
                         </a>
                     </div>
-
-
-
-                <br>
-                <br>
+                </div>
 
 
                 <form method="post" action="{% url 'foodshow:eaten' %}" name="delete_foods">
                     {% csrf_token %}
-                    <div class="button">
-                        <div>
-                            <a class="center">
-                                <a type="submit" name="delete_foods" class="pushme" onclick="document.getElementById('click').click()"> <span
-                                        class="inner">delete foods</span></a>
-                            </a>
-                        </div>
 
-                                <button type="submit" name="delete_foods" class="delete_foods" id="click"></button>
-                    </div>
+                    <button type="submit" name="delete_foods" class="delete_foods" id="click"></button>
                 </form>
-            </div>
             </div>
             <div class="col-2">
 
