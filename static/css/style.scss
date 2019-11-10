@@ -888,101 +888,109 @@ label{
 
 #timefridgenavbox{
   display: none;
-  font-size: 20px;
+  font-size: 12px;
+  width:180px;
 }
 
 #timefridgenav:hover+#timefridgenavbox{
   display: block;
     position: absolute;
-   top: 60px;
-  left: 50px;
+   top: 50px;
+  left: 80px;
 }
 
 
 #categoryfridgenavbox{
   display: none;
-  font-size: 20px;
+  font-size: 12px;
+  width:180px;
 }
 
 #categoryfridgenav:hover+#categoryfridgenavbox{
   display: block;
     position: absolute;
-   top: 60px;
-  left: 50px;
+   top: 50px;
+  left: 210px;
 }
 
 
 #scan_in_progressnavbox{
   display: none;
-  font-size: 20px;
+  font-size: 12px;
+  width:500px;
 }
 
 #scan_in_progressnav:hover+#scan_in_progressnavbox{
   display: block;
     position: absolute;
-   top: 60px;
-  left: 50px;
+   top: 50px;
+  left: 310px;
 }
 
 
 #shoppingnavbox{
   display: none;
-  font-size: 20px;
+  font-size: 12px;
+  width:500px;
 }
 
 #shoppingnav:hover+#shoppingnavbox{
   display: block;
     position: absolute;
-   top: 60px;
-  left: 50px;
+   top: 50px;
+  left: 400px;
 }
 
 #upload_pagenavbox{
   display: none;
-  font-size: 20px;
+  font-size: 12px;
+  width:500px;
 }
 
 #upload_pagenav:hover+#upload_pagenavbox{
   display: block;
     position: absolute;
-   top: 60px;
-  left: 50px;
+   top: 50px;
+  left: 500px;
 }
 
 #eatennavbox{
   display: none;
-  font-size: 20px;
+  font-size: 12px;
+  width:500px;
 }
 
 #eatennav:hover+#eatennavbox{
   display: block;
     position: absolute;
-   top: 60px;
-  left: 50px;
+   top: 50px;
+  left: 700px;
 }
 
 
 #custom_foodsnavbox{
   display: none;
-  font-size: 20px;
+  font-size:12px;
+  width:500px;
 }
 
 #custom_foodsnav:hover+#custom_foodsnavbox{
   display: block;
     position: absolute;
-   top: 60px;
-  left: 50px;
+   top: 50px;
+  left: 800px;
 }
 
 #fridge_managernavbox{
   display: none;
-  font-size: 20px;
+  font-size: 12px;
+  width:500px;
 }
 
 #fridge_managernav:hover+#fridge_managernavbox{
   display: block;
     position: absolute;
-   top: 60px;
-  left: 50px;
+   top: 50px;
+  left: 900px;
 }
 

@@ -2,46 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.1c87150c831d.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.1ea6147cc0d6.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.24f8fbb02206.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.2b7f93a345b8.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.2bcab69e555d.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.3466b361c93b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.4003c34cbf85.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.432d5a970636.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.43b234f8749b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.4ca4ebde35d1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.53a356913b1e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.63c4e31ece64.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.643941e07125.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.684ff94c74e3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.74b00dacf57e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.7e9a38c09792.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.7f6c5c8d9680.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.869a521c6b7f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.8ed7a0c4ba19.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.957d8aa10d18.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.99caffc3acdc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.9d9ceef42fc1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.a6a9dd6b137d.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.ab175e34777f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.b6ffc3886f6f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.b7abd09dd2a8.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.bdb9e8867ad0.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.c35078944e5a.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.c3aef28749a6.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.d0bd57b002ad.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.e4c81e8a4473.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.ee5d8352dd1e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.f260cc0faf2b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.f363f2b93109.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.fd66f064ec51.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.0b770cd57da4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.116f508b1a87.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.13005944dd5b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.13e0174abf2f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.1b2d2c5f66fa.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.2235e3edd487.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.321c24cad643.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.343a38e45776.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.3f6e7a9c63f5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.7ab94a3e003b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.87d16a45c3ad.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.8e25609c933c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.9694b0e76ec5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.ac072b500692.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.bf22191e11f0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.df1e74a05a21.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.e0dc417b2600.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.e284f8b2e21d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.f86464b0444d.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +216,7 @@
       <workItem from="1573370901889" duration="1426000" />
       <workItem from="1573372731368" duration="1617000" />
       <workItem from="1573374559895" duration="1745000" />
-      <workItem from="1573376381226" duration="75000" />
+      <workItem from="1573376381226" duration="789000" />
     </task>
     <servers />
   </component>
