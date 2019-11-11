@@ -1006,24 +1006,8 @@ html {
 }
 
 
-.containernav div {
-    width: 138px;
-    height: 20px;
-    display: inline-block;
-}
 
-@media screen and (max-width:350px) {
-    .containernav { display: flex; flex-flow: column;}
-  .nine { order: 1; }
-  .eight { order: 2; }
-  .seven { order: 3; }
-  .six { order: 4; }
-    .five { order: 5; }
-    .four { order: 6;  }
-    .three { order:7; }
-    .two { order: 8; }
-    .one { order: 9; }
-}
+
 
 #wholefridge{
   position: relative;
@@ -1066,6 +1050,17 @@ html {
 
 @media screen and (max-width: 400px) {
     .openfridgebuttoncatagory { display: flex; flex-flow: column; }
+}
+
+
+
+nav select {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block; }
 }
 
 
