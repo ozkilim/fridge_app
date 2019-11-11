@@ -2,10 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.ffa6862c9507.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.04f2abc0cbf9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.1b98adb8785f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.1f5b8d9e8def.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.2beae6d32d42.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.4ad9b45cf397.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.684543adc73f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.6922595b0cc9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.6c5d6b230841.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.6d0588f8146d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.70268c7821bf.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.743bdec284fd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.8c155e0cb5ae.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.91b56677458d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.9cc54d2b243d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.b3af6d21f871.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.d505688341d3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.d63fa7d4364a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.de3974491484.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.e4fb9983f735.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.e89f103d95ca.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.ee627e145fe2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.f39ad7b9d6bc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.f4b84f9f602a.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/eaten.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/eaten.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index_by__food_catagory.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index_by__food_catagory.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +246,8 @@
       <workItem from="1573488555835" duration="1971000" />
       <workItem from="1573490698751" duration="1517000" />
       <workItem from="1573496586839" duration="1459000" />
-      <workItem from="1573498927810" duration="817000" />
+      <workItem from="1573498927810" duration="1763000" />
+      <workItem from="1573500748137" duration="624000" />
     </task>
     <servers />
   </component>

@@ -1007,11 +1007,14 @@ html {
 
 
 
-
-
 #wholefridge{
   position: relative;
   top: 120px;
+}
+
+#wholecatagoryfridge{
+   position: relative;
+  top:260px;
 }
 
 
@@ -1024,12 +1027,17 @@ html {
 }
 
 
-.openfridgebuttoncatagory div {
+.openfridgebuttoncatagory{
   position: relative;
-  top: 40px;
+  top: 100px;
+  right: 400px;
     width: 300px;
-    height: 200px;
+    height: 100px;
     display: inline-block;
+}
+.button-openfridgebuttoncatagory{
+  position: relative;
+  right: 170px;
 }
 
 
@@ -1037,6 +1045,20 @@ html {
 @media screen and (max-width: 400px) {
     .openfridgebutton { display: flex; flex-flow: column; }
 }
+
+    .button-eatenfoods {
+  position: relative;
+      right: 160px;
+}
+
+@media screen and (max-width: 400px) {
+    .button-eatenfoods {
+  position: relative;
+  right: 150px;
+}
+}
+
+
 
 @media screen and (max-width: 400px) {
     #timefridgenavbox { visibility: hidden;  }
@@ -1051,6 +1073,7 @@ html {
 @media screen and (max-width: 400px) {
     .openfridgebuttoncatagory { display: flex; flex-flow: column; }
 }
+
 
 
 

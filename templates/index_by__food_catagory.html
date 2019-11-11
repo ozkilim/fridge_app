@@ -5,65 +5,21 @@
 
     <div class="container">
         <div class="row">
-{#            <div class="col-3">#}
-{#                <br>#}
-{#                <div>#}
-{#                    <div class="uploadpagebutton">#}
-{#                        <a class="center"><a class="uploadpushme" href="{% url 'foodshow:upload_page' %}"> <span#}
-{#                                class="uploadinner">Scan#}
-{#                            your foods!#}
-{##}
-{#                            <div class="ocrloader">#}
-{#                                <em></em>#}
-{#                                <div>#}
-{#                                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i>#}
-{#                                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i>#}
-{#                                    <i></i><i></i><i></i>#}
-{#                                </div>#}
-{#                                <span></span>#}
-{#                            </div>#}
-{#                        </a>#}
-{#                        </a>#}
-{#                    </div>#}
-{#                    </span>#}
-{#                </div>#}
-{#                <br>#}
-{#                <br>#}
-{#                <br>#}
-{#                <br>#}
-{#                <br>#}
-{#                <br>#}
-{#                <div class="button">#}
-{#                    <div>#}
-{#                        <a class="center"><a href="{% url 'foodshow:eaten' %}" class="pushme"> <span#}
-{#                                class="inner">Eaten Foods</span></a>#}
-{#                        </a>#}
-{#                    </div>#}
-{##}
-{#                </div>#}
-{#                <br>#}
-{#                <br>#}
-{#                <br>#}
-{#                <br>#}
-{#                <br>#}
-{##}
-{#            </div>#}
-{#        <div class="col-1">#}
-{#        </div>#}
-            <div class="col-12">
-                <br>
-            <div class = "openfridgebuttoncatagory">
-                <div class="button">
-                    <a class="center"><a class="pushme"
-                                         onclick="document.getElementById('primaryButton').click()"> <span
-                            class="inner">Open the category fridge!</span></a>
-                    </a>
-                    </a>
+            <div class="col-md-12 col-xs-18">
+                <div class="openfridgebuttoncatagory">
+                    <div class="button-openfridgebuttoncatagory">
+                        <a class="center"><a class="pushme"
+                                             onclick="document.getElementById('primaryButton').click()"> <span
+                                class="inner">Open the category fridge!</span></a>
+                        </a>
+                        </a>
+                    </div>
+            </div>
                 </div>
             </div>
-                <br>
-                <br>
-                <br>
+
+            <div class="row" id="wholecatagoryfridge">
+            <div class="col-md-12 col-xs-18">
                 <div class="accordion" id="accordionExample">
 
                     {% for i in food_catagory_list %}
@@ -86,30 +42,32 @@
 
                                     {% for food in food_list %}
                                         {% if food.food_catagory == i %}
-                                            <div class ="fridgeitemcontainer">
+                                            <div class="fridgeitemcontainer">
                                                 <div class="foodnameinfridge">{{ food.foodname }}</div>
                                                 <div class="whenyouboughtit">When you bought it:</div>
                                                 <div class="whenyouboughtitreasult">{{ food.scanneddate }}
                                                     <img src="media/food_icons/{{ food.food_image }}" class="foodicon">
                                                 </div>
 
-                                                    <form action="{% url 'foodshow:sort_by_catagory' %}" method="post" name="submit">
-                                                        {% csrf_token %}
-                                                        <input class="eatbutton" type="Submit" name="submit"
-                                                               value="{{ food.fridge_food_id }}" id="{{ food.fridge_food_id }}">
+                                                <form action="{% url 'foodshow:sort_by_catagory' %}" method="post"
+                                                      name="submit">
+                                                    {% csrf_token %}
+                                                    <input class="eatbutton" type="Submit" name="submit"
+                                                           value="{{ food.fridge_food_id }}"
+                                                           id="{{ food.fridge_food_id }}">
 
-                                                    </form>
-                                                    <button for="eating" class='showingeatbutton' id="showingeatbutton"
-                                                                class="showingeatbutton"
-                                                                onclick="document.getElementById({{ food.fridge_food_id }}).click()">Eat
-                                                        </button>
-                                                    {% comment %}<div>
+                                                </form>
+                                                <button for="eating" class='showingeatbutton' id="showingeatbutton"
+                                                        class="showingeatbutton"
+                                                        onclick="document.getElementById({{ food.fridge_food_id }}).click()">
+                                                    Eat
+                                                </button>
+                                                {% comment %}<div>
                                                         <div id="eat" class="monster"></div>
 
                                                         <a href="#eat">Eat</a>
                                                         <a href="#">Stop Eating</a>
                                                     </div>{% endcomment %}
-
 
 
                                             </div>
@@ -124,8 +82,6 @@
                     {% endfor %}
                 </div>
             </div>
-
-
         </div>
     </div>
     <br>
