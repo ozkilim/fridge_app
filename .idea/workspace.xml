@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.2a7151ddd6cd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.62116dc8f6ad.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.6f3ac080df4a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.9aae6eb09585.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.a7b166e1629a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.abbdf30816fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.b451024c6aa4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.e5db1fab7949.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.ef212d5c3f4c.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodshow/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodshow/migrations/0002_auto_20191110_1421.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -219,6 +226,7 @@
       <workItem from="1573484466397" duration="2016000" />
       <workItem from="1573486725885" duration="1208000" />
       <workItem from="1573488555835" duration="1971000" />
+      <workItem from="1573490698751" duration="1152000" />
     </task>
     <servers />
   </component>

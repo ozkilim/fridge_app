@@ -888,14 +888,14 @@ label{
   display: none;
   font-size: 12px;
   width:180px;
-  color: deeppink;
+
 }
 
 #timefridgenav:hover+#timefridgenavbox{
   display: block;
     position: absolute;
-   top: 50px;
-  left: 80px;
+   top: 180px;
+  left: 530px;
 }
 
 
@@ -903,101 +903,101 @@ label{
   display: none;
   font-size: 12px;
   width:180px;
-  color: seagreen;
+
 }
 
 #categoryfridgenav:hover+#categoryfridgenavbox{
   display: block;
     position: absolute;
-   top: 50px;
-  left: 210px;
+   top: 180px;
+  left: 530px;
 }
 
 
 #scan_in_progressnavbox{
   display: none;
   font-size: 12px;
-  width:500px;
-  color: rebeccapurple;
+  width:180px;
+
 }
 
 #scan_in_progressnav:hover+#scan_in_progressnavbox{
   display: block;
     position: absolute;
-   top: 50px;
-  left: 310px;
+     top: 180px;
+  left: 530px;
 }
 
 
 #shoppingnavbox{
   display: none;
   font-size: 12px;
-  width:500px;
-  color: midnightblue;
+  width:180px;
+
 }
 
 #shoppingnav:hover+#shoppingnavbox{
   display: block;
     position: absolute;
-   top: 50px;
-  left: 400px;
+      top: 180px;
+  left: 530px;
 }
 
 #upload_pagenavbox{
   display: none;
   font-size: 12px;
-  width:500px;
-  color: teal;
+  width:180px;
+
 }
 
 #upload_pagenav:hover+#upload_pagenavbox{
   display: block;
     position: absolute;
-   top: 50px;
-  left: 500px;
+    top: 180px;
+  left: 530px;
 }
 
 #eatennavbox{
   display: none;
   font-size: 12px;
-  width:500px;
-  color: darkviolet;
+  width:180px;
+
 }
 
 #eatennav:hover+#eatennavbox{
   display: block;
     position: absolute;
-   top: 50px;
-  left: 700px;
+      top: 180px;
+  left: 530px;
 }
 
 
 #custom_foodsnavbox{
   display: none;
   font-size:12px;
-  width:500px;
-  color: darkslategray;
+  width:180px;
+
 }
 
 #custom_foodsnav:hover+#custom_foodsnavbox{
   display: block;
     position: absolute;
-   top: 50px;
-  left: 800px;
+     top: 180px;
+  left: 530px;
 }
 
 #fridge_managernavbox{
   display: none;
   font-size: 12px;
-  width:500px;
-  color: darkred;
+  width:180px;
+
 }
 
 #fridge_managernav:hover+#fridge_managernavbox{
   display: block;
     position: absolute;
-   top: 50px;
-  left: 900px;
+      top: 180px;
+  left: 530px;
 }
 
 
@@ -1049,5 +1049,18 @@ html {
 @media screen and (max-width: 400px) {
     .openfridgebutton { display: flex; flex-flow: column; }
 }
+
+@media screen and (max-width: 400px) {
+    #timefridgenavbox { visibility: hidden;  }
+  #categoryfridgenavbox { visibility: hidden;  }
+  #scan_in_progressnavbox { visibility: hidden;  }
+  #upload_pagenavbox { visibility: hidden;  }
+  #eatennavbox { visibility: hidden;  }
+  #custom_foodsnavbox { visibility: hidden;  }
+  #fridge_managernavbox { visibility: hidden;  }
+
+}
+
+
 
 
