@@ -2,9 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.252a7cffd0dc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.9cd52290534a.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.bac1f1e2cbb3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.050bd04006f0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.05abaef3e966.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.0756f7004bad.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.07f0177641ef.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.080fe5836363.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.0cf616785c27.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.0e850c85f6ff.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.109bab81a0a5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.10a34c31dff3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.14a32b1c83f6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.14aaf82ea596.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.16d90da76f3e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.176112dc5c0f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.1d9a5c6ba84e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.20ebf404dd81.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.2987b714e6ac.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.32c70563e225.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.37deb46983a8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.3d34f6432693.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.478468cec3df.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.481ff42eb90e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.4857162f3818.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.4eafc79b42ad.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.4f2a5dd0f312.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.50c53ce968c1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.535cc09b4bfa.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.54a18a5276c9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.621519c8369c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.63eba9537db5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.6f9fba50de1b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.70cce0837229.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.70e94fa1ae98.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.716c8ffc0dab.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.7399b88bde69.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.75bf53e7b442.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.79690021ddc6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.7a8264ff71d0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.7d915e45f3a8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.85008f6ef015.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.85c96b33fb6d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.8b3fa53ad45d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.9748e59015af.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.98e9156cef28.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.998f6466581a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.9c69703f7bff.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.a615e719684c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.a781a75826e4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.adc9fc4a3923.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.b32f150971d6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.b865f31546f0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.c17e827504a9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.c24837e9c2ab.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.c3079e0f9933.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.c4a5919a2fed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.c77f3b55085e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.c9c4a5a0d47d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.cfb510db23aa.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.d42283fa2315.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.da27ba8c8c32.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.e1661b2b9899.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.e79716c9ae2e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.eac366e99162.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.ecff30fb4dc0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.ee5647fc9071.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.f77da49e71cc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.f7df634118e4.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
     </list>
@@ -221,6 +284,7 @@
       <workItem from="1573486725885" duration="1208000" />
       <workItem from="1573488555835" duration="1971000" />
       <workItem from="1573490698751" duration="1517000" />
+      <workItem from="1573496586839" duration="954000" />
     </task>
     <servers />
   </component>
