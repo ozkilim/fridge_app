@@ -4,54 +4,8 @@
     {% load static %}
     <div class="container">
         <div class="row">
-            {#            <div class="col-3">#}
-            {#                <br>#}
-            {#                <div>#}
-            {#                    <div class="uploadpagebutton">#}
-            {#                        <a class="center"><a class="uploadpushme" href="{% url 'foodshow:upload_page' %}"> <span#}
-            {#                                class="uploadinner">Scan#}
-            {#                            your foods!#}
-            {##}
-            {#                            <div class="ocrloader">#}
-            {#                                <em></em>#}
-            {#                                <div>#}
-            {#                                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i>#}
-            {#                                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i>#}
-            {#                                    <i></i><i></i><i></i>#}
-            {#                                </div>#}
-            {#                                <span></span>#}
-            {#                            </div>#}
-            {#                        </a>#}
-            {#                        </a>#}
-            {#                    </div>#}
-            {#                    </span>#}
-            {#                </div>#}
-            {#                <br>#}
-            {#                <br>#}
-            {#                <br>#}
-            {#                <br>#}
-            {#                <br>#}
-            {#                <br>#}
-            {#                <div class="button">#}
-            {#                    <div>#}
-            {#                        <a class="center"><a href="{% url 'foodshow:eaten' %}" class="pushme"> <span#}
-            {#                                class="inner">Eaten Foods</span></a>#}
-            {#                        </a>#}
-            {#                    </div>#}
-            {##}
-            {#                </div>#}
-            {#                <br>#}
-            {#                <br>#}
-            {#                <br>#}
-            {#                <br>#}
-            {#                <br>#}
-            {##}
-            {#            </div>#}
-            {#        <div class="col-1">#}
-            {#        </div>#}
-            <div class="col-12">
 
-                <br>
+            <div class="col-md-12 col-xs-18" >
                 <div class="openfridgebutton">
                     <div class="button">
                         <a class="center"><a class="pushme"
@@ -61,9 +15,11 @@
                         </a>
                     </div>
                 </div>
-                <br>
-                <br>
-                <br>
+            </div>
+        </div>
+    <div class="row" id="wholefridge">
+        <div class="col-md-12 col-xs-18">
+
                 <div class="accordion" id="accordionExample">
 
                     {% for i in day_list %}

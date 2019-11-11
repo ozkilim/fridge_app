@@ -68,6 +68,7 @@ body{
   font-family: black-burger !important;
   color: $main !important;
   font-size: 5vh;
+  position: relative;
 }
 
 .center{
@@ -704,10 +705,7 @@ label{
   background: thistle;
 }
 
-.openfridgebutton{
-  position: relative;
-  left:270px;
-}
+
 
 .confirmformbuttonyes{
     position: relative;
@@ -1015,5 +1013,41 @@ html {
 }
 
 
+.containernav div {
+    width: 250px;
+    height: 20px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 400px) {
+    .containernav { display: flex; flex-flow: column; }
+  .nine { order: 1; }
+  .eight { order: 2; }
+  .seven { order: 3; }
+  .six { order: 4; }
+    .five { order: 5; }
+    .four { order: 6;  }
+    .three { order:7; }
+    .two { order: 8; }
+    .one { order: 9; }
+}
+
+#wholefridge{
+  position: relative;
+  top: 120px;
+}
+
+
+.openfridgebutton div {
+  position: relative;
+  top: 40px;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 400px) {
+    .openfridgebutton { display: flex; flex-flow: column; }
+}
 
 
