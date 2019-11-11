@@ -1,1 +1,1 @@
-{"shopping_list": ["cauliflour", "aubergine", "cherry", "lettuce"]}
+{"shopping_list": ["apple", "banana", "chilli", "cabbage", "soybean", "cauliflour"]}
