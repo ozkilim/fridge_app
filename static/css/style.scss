@@ -663,7 +663,8 @@ li {
   font-family: black-burger;
 }
 .signupformtitle{
-    font-family: black-burger;
+  font-size: 50px;
+  width: 1000px;
 }
 
 #id_food_category{
@@ -1084,6 +1085,10 @@ nav select {
 @media (max-width: 500px) {
   nav ul     { display: none; }
   nav select { display: inline-block; }
+}
+
+@media screen and (max-width: 400px) {
+    .signupform { display: flex; flex-flow: column; width: 50px; }
 }
 
 

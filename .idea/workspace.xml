@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.248688559f40.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.2f5d22b3b635.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.45b2ddb613a7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.8f32be4fe611.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.a0729acc0634.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.a94a4856c7ba.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/style.f7df2412ae7d.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +229,8 @@
       <workItem from="1573496586839" duration="1459000" />
       <workItem from="1573498927810" duration="1763000" />
       <workItem from="1573500748137" duration="1139000" />
-      <workItem from="1573547881316" duration="1429000" />
+      <workItem from="1573547881316" duration="1899000" />
+      <workItem from="1573550026018" duration="1661000" />
     </task>
     <servers />
   </component>

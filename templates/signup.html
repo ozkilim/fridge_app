@@ -3,12 +3,11 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
 <head>
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=750px" initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -36,32 +35,33 @@
 
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 
-<link rel="icon" type="image/png" href="static/food_icons/eatenfood.png">
+    <link rel="icon" type="image/png" href="static/food_icons/eatenfood.png">
     <title></title>
 
 
 </head>
-<body>
+</body>
 <br>
-<div class="row">
-    <div class="col-3">
-    </div>
-    <div class="col-6">
-        <h3 class="signupformtitle">Sign up to minimise waste</h3>
-        <form method="post" class="signupform">
-            <table>
-                {% csrf_token %}
-                {{ form.as_table }}
-                <tr>
-                    <td></td>
-                    <td><input type="submit" name="submit" value="Register" class="signup_button"/></td>
-                </tr>
-            </table>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <h3 class="signupformtitle">Sign up to minimise waste</h3>
+            <form method="post" class="signupform">
+                <table>
+                    {% csrf_token %}
+                    {{ form.as_table }}
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="submit" value="Register" class="signup_button"/></td>
+                    </tr>
+                </table>
 
 
-        </form>
-<br>
-                {% if form.errors %}
+            </form>
+            <br>
+            {% if form.errors %}
                 {% for field in form %}
                     {% for error in field.errors %}
                         <div class="alert alert-danger">
@@ -70,20 +70,22 @@
                     {% endfor %}
                 {% endfor %}
             {% endif %}
-        <br>
-        <h2>already a user?</h2>
-        <br>
-        <div class="button">
-            <div>
-                <a class="center"><a href="{% url 'foodshow:login' %}" class="pushme"> <span
-                        class="inner"> login here</span></a>
-                </a>
-            </div>
+            <br>
+            <h2>already a user?</h2>
+            <br>
+            <div class="button">
+                <div>
+                    <a class="center"><a href="{% url 'foodshow:login' %}" class="pushme"> <span
+                            class="inner"> login here</span></a>
+                    </a>
+                </div>
 
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
         </div>
     </div>
 </div>
-
 
 </body>
 </html>
