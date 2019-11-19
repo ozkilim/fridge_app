@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f254119-334d-40ee-b0b8-91dd03f94ca0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodshow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/foodshow/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_analysis/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/image_analysis/image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_analysis/imageToSave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/formsubmit.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/formsubmit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/image.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/image.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/landing.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Python Script" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -42,7 +34,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/font" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
@@ -55,11 +47,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/font" />
       <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/broccoli.pages" />
+      <recent name="$PROJECT_DIR$/foodscan" />
       <recent name="$PROJECT_DIR$/foodshow" />
-      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -237,25 +229,6 @@
       <workItem from="1573550026018" duration="1661000" />
       <workItem from="1573553109933" duration="1727000" />
       <workItem from="1573555086798" duration="234000" />
-      <workItem from="1574071332679" duration="972000" />
-      <workItem from="1574091997156" duration="1724000" />
-      <workItem from="1574094123037" duration="932000" />
-      <workItem from="1574098944073" duration="1054000" />
-      <workItem from="1574145110740" duration="7000" />
-      <workItem from="1574146107738" duration="610000" />
-      <workItem from="1574147050571" duration="1745000" />
-      <workItem from="1574148900197" duration="1764000" />
-      <workItem from="1574150728609" duration="825000" />
-      <workItem from="1574155698024" duration="1750000" />
-      <workItem from="1574157531030" duration="1160000" />
-      <workItem from="1574159421730" duration="1691000" />
-      <workItem from="1574161246905" duration="1360000" />
-      <workItem from="1574164452687" duration="1825000" />
-      <workItem from="1574166498893" duration="1679000" />
-      <workItem from="1574168345546" duration="804000" />
-      <workItem from="1574170334335" duration="1742000" />
-      <workItem from="1574172165534" duration="1696000" />
-      <workItem from="1574174051044" duration="74000" />
     </task>
     <servers />
   </component>
