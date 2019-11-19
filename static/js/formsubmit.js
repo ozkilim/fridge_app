@@ -83,12 +83,7 @@ function notifyServerError() {
             return true;
         },
         onSuccess: function (form, response) {// response from server is 200
-            Materialize.toast(response['message'], 5000, 'green accent-4');
-            if (response['redirect_url']) {
-                setTimeout(function () {
-                    window.location.href = response['redirect_url']
-                }, 1500)
-            }
+            Materialize.toast(response['message'], extendedTimeOut=0, timeOut=0);
         },
         postSuccess: function (form, response, instance) {
             form.reset();

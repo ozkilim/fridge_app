@@ -477,37 +477,17 @@ class ImageFaceDetect(TemplateView):
     def post(self, request, *args, **kwargs):
         data = request.POST.get('image')
         print(data)
-
-
         clean_data = data.replace("data:image/png;base64,", "")
         print(clean_data)
-        # remove the first part of the string...
-
-
         import base64
-        from PIL import Image
-        import io
-
-        # f = io.BytesIO(base64.b64decode(clean_data))
-        # pilimage = Image.open(f)
-        # pilimage = clean_data.encode(encoding='UTF-8')
-        # with open("imageToSave.png", "wb") as fh:
-        #     fh.write(base64.decodebytes(pilimage))
-
         bytes_base64 = clean_data.encode()
         data = base64.b64decode(bytes_base64)
         open('image_analysis/image.png', 'wb').write(data)
         extracted_text = ocr_core('image_analysis/image.png')
         trial_output = str(extracted_text)
         print(trial_output)
-        try:
-            image_data = get_face_detect_data(data)
-            # print(image_data)
-            if image_data:
-                return JsonResponse(status=200, data={'image': image_data, 'message': 'Face detected'})
-        except Exception as e:
-            pass
-        return JsonResponse(status=400, data={'errors': {'error_message': 'No face detected'}})
+        return JsonResponse(status=200, data={'image': trial_output, 'message': trial_output})
+
 
 
 class LiveVideoFaceDetect(TemplateView):
