@@ -462,7 +462,6 @@ from django.core.files.storage import FileSystemStorage
 from django.http import JsonResponse
 from django.views.generic import TemplateView
 
-from foodshow.detect import get_face_detect_data
 
 
 def upload_file(image):
