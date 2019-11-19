@@ -2,7 +2,7 @@ import base64
 from io import BytesIO
 
 
-# import imutils
+import imutils
 # import numpy as np
 from PIL import Image
 from imutils import face_utils
