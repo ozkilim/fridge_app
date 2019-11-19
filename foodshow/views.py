@@ -1,3 +1,8 @@
+from __future__ import unicode_literals
+
+import base64
+from PIL import Image
+from io import BytesIO
 import datetime
 import re
 import json
@@ -14,7 +19,6 @@ from django.shortcuts import render, redirect
 from django.template.loader import render_to_string
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-import pytesseract
 
 from foodscan.middleware.login_exempt import login_exempt
 from foodshow.forms import CustomUserCreationForm, CustomFoodsForm, CustomFridgeFoodsForm, ShoppingForm
@@ -448,5 +452,49 @@ def seed(request):
     seed_food_data(35)
     return HttpResponse('seeded')
 
-def scan_in_progress(request):
-    return render(request, "scan_in_progress.html")
+# def scan_in_progress(request):
+#
+#
+#     return render(request, "scan_in_progress.html")
+
+
+from django.core.files.storage import FileSystemStorage
+from django.http import JsonResponse
+from django.views.generic import TemplateView
+
+from foodshow.detect import get_face_detect_data
+
+
+def upload_file(image):
+    fs = FileSystemStorage()
+    filename = fs.save(image.name, image)
+    uploaded_file_url = fs.path(filename)
+    return uploaded_file_url
+
+
+class ImageFaceDetect(TemplateView):
+    template_name = 'image.html'
+    def post(self, request, *args, **kwargs):
+        data = request.POST.get('image')
+        print(data)
+        clean_data = data.replace("data:image/png;base64,", "")
+        print(clean_data)
+        import base64
+        bytes_base64 = clean_data.encode()
+        data = base64.b64decode(bytes_base64)
+        open('image_analysis/image.png', 'wb').write(data)
+        extracted_text = ocr_core('image_analysis/image.png')
+        trial_output = str(extracted_text)
+        print(trial_output)
+        return JsonResponse(status=200, data={'image': trial_output, 'message': trial_output})
+
+
+
+class LiveVideoFaceDetect(TemplateView):
+    template_name = 'video.html'
+
+    def post(self, request, *args, **kwargs):
+        return JsonResponse(status=200, data={'message': 'Face detected'})
+
+
+

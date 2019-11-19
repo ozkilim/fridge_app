@@ -3,6 +3,7 @@ from django.urls import path, include
 from django.conf.urls import url
 from django.contrib.auth import views as auth_views
 
+from foodshow.views import LiveVideoFaceDetect, ImageFaceDetect
 from . import views
 
 app_name = 'foodshow'
@@ -30,7 +31,11 @@ urlpatterns = [
     url('^', include('django.contrib.auth.urls')),
     path('shopping', views.shopping, name='shopping'),
     path('seed', views.seed, name='seed'),
-    path('scan_in_progress', views.scan_in_progress, name='scan_in_progress'),
+    # path('scan_in_progress', views.scan_in_progress, name='scan_in_progress'),
+
+
+    url(r'^face-detect/image/$', ImageFaceDetect.as_view(), name='image'),
+    url(r'^face-detect/video/$', LiveVideoFaceDetect.as_view(), name='live_video'),
 
 
     # url(r'^password_reset/$', auth_views.password_reset, name='password_reset'),

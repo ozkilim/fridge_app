@@ -1,0 +1,135 @@
+{% load staticfiles %}
+{% load compress %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Face Detect</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=500px" initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+    {% compress css %}
+        <link rel="stylesheet" type="text/x-scss" href="{% static 'css/style.scss' %}">
+    {% endcompress %}
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" href="media/food_icons/eatenfood.png">
+</head>
+<body>
+{% if request.user.is_authenticated %}
+    <nav>
+        <ul>
+            <li><a href="{% url 'foodshow:index' %}" class="nav-logout-button" id='timefridgenav'>Timefridge <img
+                    src="media/food_icons/time.png" class="foodicon"></a>
+                <div id="timefridgenavbox">See all of your foods organised by use-by-date time.</div>
+            </li>
+            <li><a href="{% url 'foodshow:sort_by_catagory' %}" class="nav-logout-button" id="categoryfridgenav">category
+                fridge <img src="media/food_icons/fridge.svg" class="foodicon"></a>
+                <div id="categoryfridgenavbox">See all of your foods organised by use by food category.</div>
+            </li>
+            <li><a href="{% url 'foodshow:image' %}" class="nav-logout-button" id="scan_in_progressnav">Scan
+                foods <img src="media/food_icons/scan.png" class="foodicon"></a>
+                <div id="scan_in_progressnavbox">Scan your shopping receipts and add the your foods to your virtual
+                    fridge to keep track of their use-by-dates
+                </div>
+            </li>
+            <li><a href="{% url 'foodshow:shopping' %}" class="nav-logout-button" id="shoppingnav">Shopping list<img
+                    src="media/food_icons/shopping.png" class="foodicon"></a>
+                <div id="shoppingnavbox">Create a shopping list for yourself. Then add the list to your virtual fridge
+                    when you have made the purchases.
+                </div>
+            </li>
+
+            <li><a href="{% url 'foodshow:upload_page' %}" class="nav-logout-button" id="upload_pagenav">Upload recipts
+                <img
+                        src="media/food_icons/recipt.png" class="foodicon"></a>
+                <div id="upload_pagenavbox">Upload images of your receipts - we will extract the foods and add them your
+                    virtual fridge to keep track of their use-by-dates.
+                </div>
+            </li>
+            <li><a href="{% url 'foodshow:eaten' %}" class="nav-logout-button" id="eatennav">Eaten foods <img
+                    src="media/food_icons/eatenfood.png" class="foodicon"></a>
+                <div id="eatennavbox">See all of your eaten foods. Don't worry, you can add them back to your fridge by
+                    clicking on them if you clicked ‘eat’ in your fridge by mistake.
+                </div>
+            </li>
+            <li><a href="{% url 'foodshow:custom_foods' %}" class="nav-logout-button" id="custom_foodsnav">Add custom
+                food<img
+                        src="media/food_icons/general.svg" class="foodicon"></a>
+                <div id="custom_foodsnavbox">Add a custom food to your custom food database with its own custom
+                    use-by-date. This could be a food you cooked for example.
+                </div>
+            </li>
+            <li><a href="{% url 'foodshow:fridge_manager' %}" class="nav-logout-button" id="fridge_managernav">Fridge
+                manager <img
+                        src="media/food_icons/manager.png" class="foodicon"></a>
+                <div id="fridge_managernavbox">Add one of your custom foods to your fridge</div>
+            </li>
+            <li><a href="{% url 'foodshow:logout' %}" class="nav-logout-button">Logout {{ request.user.username }}<img
+                    src="media/food_icons/logout.png" class="foodicon"></a></li>
+
+
+        </ul>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script> <!-- Import Jquery Here-->
+        <script type="text/javascript">
+            // Create the dropdown base
+            $("<select />").appendTo("nav");
+
+            // Create default option "Go to..."
+            $("<option />", {
+                "selected": "selected",
+                "value": "",
+                "text": "Fridigeflip-Options"
+            }).appendTo("nav select");
+
+            // Populate dropdown with menu items
+            $("nav a").each(function () {
+                var el = $(this);
+                $("<option />", {
+                    "value": el.attr("href"),
+                    "text": el.text()
+                }).appendTo("nav select");
+            });
+            $("nav select").change(function () {
+                window.location = $(this).find("option:selected").val();
+            });
+        </script>
+    </nav>
+
+
+{% endif %}
+{% block content %}
+{% endblock %}
+
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/formsubmit.js' %}"></script>
+{% block js %}
+{% endblock %}
+</body>
+</html>
