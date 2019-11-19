@@ -1,8 +1,7 @@
 import base64
 from io import BytesIO
 
-import cv2
-import dlib
+
 # import imutils
 # import numpy as np
 from PIL import Image
