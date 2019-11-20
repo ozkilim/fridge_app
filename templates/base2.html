@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Face Detect</title>
+    <title>Recipt scanner</title>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=500px" initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -43,21 +43,21 @@
     <nav>
         <ul>
             <li><a href="{% url 'foodshow:index' %}" class="nav-logout-button" id='timefridgenav'>Timefridge <img
-                    src="media/food_icons/time.png" class="foodicon"></a>
+                    src="{% static 'food_icons/time.png' %}" class="foodicon"></a>
                 <div id="timefridgenavbox">See all of your foods organised by use-by-date time.</div>
             </li>
             <li><a href="{% url 'foodshow:sort_by_catagory' %}" class="nav-logout-button" id="categoryfridgenav">category
-                fridge <img src="media/food_icons/fridge.svg" class="foodicon"></a>
+                fridge <img src="{% static 'food_icons/fridge.svg' %}" class="foodicon"></a>
                 <div id="categoryfridgenavbox">See all of your foods organised by use by food category.</div>
             </li>
             <li><a href="{% url 'foodshow:image' %}" class="nav-logout-button" id="scan_in_progressnav">Scan
-                foods <img src="media/food_icons/scan.png" class="foodicon"></a>
+                foods <img src="{% static 'food_icons/scan.png' %}" class="foodicon"></a>
                 <div id="scan_in_progressnavbox">Scan your shopping receipts and add the your foods to your virtual
                     fridge to keep track of their use-by-dates
                 </div>
             </li>
             <li><a href="{% url 'foodshow:shopping' %}" class="nav-logout-button" id="shoppingnav">Shopping list<img
-                    src="media/food_icons/shopping.png" class="foodicon"></a>
+                    src="{% static 'food_icons/shopping.png' %}" class="foodicon"></a>
                 <div id="shoppingnavbox">Create a shopping list for yourself. Then add the list to your virtual fridge
                     when you have made the purchases.
                 </div>
@@ -65,33 +65,31 @@
 
             <li><a href="{% url 'foodshow:upload_page' %}" class="nav-logout-button" id="upload_pagenav">Upload recipts
                 <img
-                        src="media/food_icons/recipt.png" class="foodicon"></a>
+                        src="{% static 'food_icons/recipt.png' %}" class="foodicon"></a>
                 <div id="upload_pagenavbox">Upload images of your receipts - we will extract the foods and add them your
                     virtual fridge to keep track of their use-by-dates.
                 </div>
             </li>
             <li><a href="{% url 'foodshow:eaten' %}" class="nav-logout-button" id="eatennav">Eaten foods <img
-                    src="media/food_icons/eatenfood.png" class="foodicon"></a>
+                    src="{% static 'food_icons/eatenfood.png' %}" class="foodicon"></a>
                 <div id="eatennavbox">See all of your eaten foods. Don't worry, you can add them back to your fridge by
                     clicking on them if you clicked ‘eat’ in your fridge by mistake.
                 </div>
             </li>
             <li><a href="{% url 'foodshow:custom_foods' %}" class="nav-logout-button" id="custom_foodsnav">Add custom
                 food<img
-                        src="media/food_icons/general.svg" class="foodicon"></a>
+                        src="{% static 'food_icons/general.svg' %}" class="foodicon"></a>
                 <div id="custom_foodsnavbox">Add a custom food to your custom food database with its own custom
                     use-by-date. This could be a food you cooked for example.
                 </div>
             </li>
             <li><a href="{% url 'foodshow:fridge_manager' %}" class="nav-logout-button" id="fridge_managernav">Fridge
                 manager <img
-                        src="media/food_icons/manager.png" class="foodicon"></a>
+                        src="{% static 'food_icons/manager.png' %}" class="foodicon"></a>
                 <div id="fridge_managernavbox">Add one of your custom foods to your fridge</div>
             </li>
             <li><a href="{% url 'foodshow:logout' %}" class="nav-logout-button">Logout {{ request.user.username }}<img
-                    src="media/food_icons/logout.png" class="foodicon"></a></li>
-
-
+                    src="{% static 'food_icons/logout.png' %}" class="foodicon"></a></li>
         </ul>
 
 
